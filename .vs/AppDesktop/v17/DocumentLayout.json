@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|c:\\users\\lenovo\\documents\\software fazenda desktop\\appdesktop\\appdesktop\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\appdesktop\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|c:\\users\\lenovo\\documents\\software fazenda desktop\\appdesktop\\appdesktop\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|c:\\users\\lenovo\\documents\\software fazenda desktop\\appdesktop\\appdesktop\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|c:\\users\\lenovo\\documents\\software fazenda desktop\\appdesktop\\appdesktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,13 +22,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "AppDesktop\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\MainPage.xaml.cs",
               "RelativeToolTip": "AppDesktop\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T13:52:45.102Z",
               "EditorCaption": ""
@@ -49,35 +41,9 @@
               "RelativeDocumentMoniker": "AppDesktop\\MainPage.xaml",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\MainPage.xaml",
               "RelativeToolTip": "AppDesktop\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAyAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAADwvy8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-16T13:52:15.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\AppShell.xaml",
-              "RelativeDocumentMoniker": "AppDesktop\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\AppShell.xaml",
-              "RelativeToolTip": "AppDesktop\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T13:52:04.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\App.xaml",
-              "RelativeDocumentMoniker": "AppDesktop\\App.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\App.xaml",
-              "RelativeToolTip": "AppDesktop\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T13:51:53.303Z",
               "EditorCaption": ""
             }
           ]

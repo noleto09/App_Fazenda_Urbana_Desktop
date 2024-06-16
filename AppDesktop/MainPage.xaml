@@ -3,36 +3,98 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppDesktop.MainPage"
              BackgroundColor="White">
-    <!-- Defina a cor de fundo da página -->
-
     <Grid>
         <!-- Defina uma linha e uma coluna para preencher todo o espaço disponível -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <!-- Ajusta a altura para preencher toda a tela -->
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <!-- Ajusta a largura para preencher toda a tela -->
         </Grid.ColumnDefinitions>
 
-        <!-- VerticalStackLayout removido, pois o Grid já pode gerenciar o layout -->
-
+        <!-- Imagem de fundo -->
         <Image
             Source="agross.jpg"
             Aspect="AspectFill"
-            SemanticProperties.Description="botão de acessi"
+            SemanticProperties.Description="Imagem de fundo"
             VerticalOptions="FillAndExpand"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+            Grid.Row="0"
+            Grid.Column="0"
+            Opacity="0.8" />
 
-        <!-- Botão adicionado abaixo da imagem -->
-        <Button
-            x:Name="Login"
-            Text="Entrar"
-            Clicked="Login_Clicked"
+        <!-- StackLayout centralizado com os elementos -->
+        <StackLayout
             VerticalOptions="Center"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            Padding="20"
+            Spacing="15"
+            Grid.Row="0"
+            Grid.Column="0">
 
+            <!-- Imagem de login -->
+            <Image
+                Source="img_login.jpg"
+                HeightRequest="70"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Imagem de login" />
+
+            <!-- Frame para a caixa branca dos campos de entrada -->
+            <Frame
+                BackgroundColor="White"
+                CornerRadius="10"
+                Padding="10"
+                HasShadow="True"
+                WidthRequest="300">
+                <StackLayout Spacing="10">
+                    <!-- Campo de entrada para o usuário -->
+                    <Entry
+                        x:Name="Username"
+                        Placeholder="Usuário"
+                        WidthRequest="250"
+                        HeightRequest="40" />
+
+                    <!-- Campo de entrada para a senha com ícone de olho -->
+                    <Grid>
+                        <Entry
+                            x:Name="Password"
+                            Placeholder="Senha"
+                            IsPassword="True"
+                            WidthRequest="250"
+                            HeightRequest="40" />
+                        <ImageButton
+                            Source="eye_icon.png"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BackgroundColor="Transparent"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Clicked="TogglePasswordVisibility" />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <!-- Link "Esqueceu a senha?" -->
+            <Label
+                Text="Esqueceu a senha?"
+                TextColor="White"
+                HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnForgotPasswordTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!-- Botão Entrar -->
+            <Button
+                x:Name="Login"
+                Text="Entrar"
+                Clicked="Login_Clicked"
+                BackgroundColor="#00AEEF"
+                TextColor="White"
+                WidthRequest="100"
+                HeightRequest="40"
+                HorizontalOptions="Center" />
+        </StackLayout>
     </Grid>
-
 </ContentPage>

@@ -59,6 +59,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\agross.jpg" />
+	  <None Remove="Resources\Images\img_login.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

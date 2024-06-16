@@ -1,21 +1,25 @@
-﻿namespace AppDesktop {
+﻿using Microsoft.Maui.Controls;
+
+namespace AppDesktop {
     public partial class MainPage : ContentPage {
-        int count = 0;
+        private bool isPasswordVisible = false;
 
         public MainPage() {
             InitializeComponent();
         }
 
         private void Login_Clicked(object sender, EventArgs e) {
-
-            Navigation.PushAsync(new Paginas());
-
-
+            // Lógica para o botão Entrar
         }
 
+        private void OnForgotPasswordTapped(object sender, EventArgs e) {
+            // Lógica para o link "Esqueceu a senha?"
+        }
+
+        private void TogglePasswordVisibility(object sender, EventArgs e) {
+            isPasswordVisible = !isPasswordVisible;
+            Password.IsPassword = !isPasswordVisible;
+            ((ImageButton)sender).Source = isPasswordVisible ? "eye_icon_open.png" : "eye_icon.png";
+        }
     }
-
 }
-
-
-
