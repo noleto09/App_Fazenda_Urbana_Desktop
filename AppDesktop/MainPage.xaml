@@ -89,7 +89,7 @@
             <Button
                 x:Name="Login"
                 Text="Entrar"
-                Clicked="Login_Clicked"
+                Clicked="Login_Clicked_1"
                 BackgroundColor="#00AEEF"
                 TextColor="White"
                 WidthRequest="100"
