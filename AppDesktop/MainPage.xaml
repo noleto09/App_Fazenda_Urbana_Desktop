@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Shell.NavBarIsVisible="False"
-             x:Class="AppDesktop.MainPage">
+             x:Class="AppDesktop.MainPage"
+             BackgroundColor="White">
+    <!-- Defina a cor de fundo da página -->
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            
-            <Image
-                 Source="agross.jpg"
-                 HeightRequest="1080"
-                 Aspect="AspectFit"
-                 SemanticProperties.Description="botão de acessi" />
-            
-            <Label
-                Text="Olá, Mundo!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+    <Grid>
+        <!-- Defina uma linha e uma coluna para preencher todo o espaço disponível -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <!-- Ajusta a altura para preencher toda a tela -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <!-- Ajusta a largura para preencher toda a tela -->
+        </Grid.ColumnDefinitions>
 
-            <Label
-                Text="Bem-vindo ao &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="qualquer texto 1" />
+        <!-- VerticalStackLayout removido, pois o Grid já pode gerenciar o layout -->
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Clique em mim" 
-                SemanticProperties.Hint="Conta o número de vezes que você clica"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-        </VerticalStackLayout>
-    </ScrollView>
+        <Image
+            Source="agross.jpg"
+            Aspect="AspectFill"
+            SemanticProperties.Description="botão de acessi"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"/>
+
+        <!-- Botão adicionado abaixo da imagem -->
+        <Button
+            x:Name="Login"
+            Text="Entrar"
+            Clicked="Login_Clicked"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+    </Grid>
 
 </ContentPage>

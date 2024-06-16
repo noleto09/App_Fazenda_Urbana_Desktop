@@ -6,16 +6,16 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e) {
-            count++;
+        private void Login_Clicked(object sender, EventArgs e) {
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            Navigation.PushAsync(new Paginas());
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+
         }
+
     }
 
 }
+
+
+

@@ -19,7 +19,7 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>4F97F89B0EC48AE6F7AC369AD28C71210DB0C9B5BB560ED421256F15E3D62235</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>86CD3FBEDB8E89C79B25379C62A1DE79A70BF7B79E857523BDAE9D735B73DB42</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.appdesktop_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.appdesktop_9zz4h110yvjzm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.appdesktop</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-16T02:15:40.982</Modified>
+      <Modified>2024-06-16T19:06:57.567</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-16T02:15:40.466</Modified>
+      <Modified>2024-06-16T15:33:36.503</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.runtimeconfig.json">
       <PackagePath>AppDesktop.runtimeconfig.json</PackagePath>
@@ -44,15 +44,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.dll">
       <PackagePath>AppDesktop.dll</PackagePath>
-      <Modified>2024-06-16T02:15:36.982</Modified>
+      <Modified>2024-06-16T19:06:54.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppDesktop.exe</PackagePath>
-      <Modified>2024-06-16T02:15:37.154</Modified>
+      <Modified>2024-06-16T19:06:54.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2024-06-15T22:14:23.294</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-100.png">
+      <PackagePath>logo_s_fundoSplashScreen.scale-100.png</PackagePath>
+      <Modified>2024-06-16T14:09:16.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-125.png">
+      <PackagePath>logo_s_fundoSplashScreen.scale-125.png</PackagePath>
+      <Modified>2024-06-16T14:09:16.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-150.png">
+      <PackagePath>logo_s_fundoSplashScreen.scale-150.png</PackagePath>
+      <Modified>2024-06-16T14:09:16.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-200.png">
+      <PackagePath>logo_s_fundoSplashScreen.scale-200.png</PackagePath>
+      <Modified>2024-06-16T14:09:16.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-400.png">
+      <PackagePath>logo_s_fundoSplashScreen.scale-400.png</PackagePath>
+      <Modified>2024-06-16T14:09:17.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -86,213 +106,213 @@
       <PackagePath>agross.scale-100.jpg</PackagePath>
       <Modified>2024-04-28T02:03:26.802</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.105</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:32.918</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:32.871</Modified>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:32.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
       <Modified>2024-06-16T02:15:32.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:32.824</Modified>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:32.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-400.png">
-      <PackagePath>logo_grandeLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-06-16T02:15:36.341</Modified>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:32.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-200.png">
-      <PackagePath>logo_grandeLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:35.435</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-150.png">
-      <PackagePath>logo_grandeLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:35.216</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-125.png">
-      <PackagePath>logo_grandeLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-06-16T02:15:35.060</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-100.png">
-      <PackagePath>logo_grandeLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.935</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-400.png">
-      <PackagePath>logo_grandeWideTile.scale-400.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.872</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-200.png">
-      <PackagePath>logo_grandeWideTile.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.607</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-150.png">
-      <PackagePath>logo_grandeWideTile.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.529</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-125.png">
-      <PackagePath>logo_grandeWideTile.scale-125.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.482</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-100.png">
-      <PackagePath>logo_grandeWideTile.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.435</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-400.png">
-      <PackagePath>logo_grandeMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.388</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-200.png">
-      <PackagePath>logo_grandeMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.154</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-150.png">
-      <PackagePath>logo_grandeMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.091</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-125.png">
-      <PackagePath>logo_grandeMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-06-16T02:15:34.029</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-100.png">
-      <PackagePath>logo_grandeMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.978</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-400.png">
-      <PackagePath>logo_grandeSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.933</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-200.png">
-      <PackagePath>logo_grandeSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.871</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-150.png">
-      <PackagePath>logo_grandeSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.824</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-125.png">
-      <PackagePath>logo_grandeSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.808</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-100.png">
-      <PackagePath>logo_grandeSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.777</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-400.png">
-      <PackagePath>logo_grandeStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.761</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-200.png">
-      <PackagePath>logo_grandeStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.715</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-150.png">
-      <PackagePath>logo_grandeStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.683</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-125.png">
-      <PackagePath>logo_grandeStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.652</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-100.png">
-      <PackagePath>logo_grandeStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.636</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.605</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.543</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.511</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.480</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.465</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.433</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.371</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.355</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.324</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.293</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-256.png">
-      <PackagePath>logo_grandeLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.277</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-48.png">
-      <PackagePath>logo_grandeLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.199</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-32.png">
-      <PackagePath>logo_grandeLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.168</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-24.png">
-      <PackagePath>logo_grandeLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.152</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-16.png">
-      <PackagePath>logo_grandeLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.136</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-400.png">
-      <PackagePath>logo_grandeLogo.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2024-06-16T02:15:33.105</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-200.png">
-      <PackagePath>logo_grandeLogo.scale-200.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.058</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-150.png">
-      <PackagePath>logo_grandeLogo.scale-150.png</PackagePath>
-      <Modified>2024-06-16T02:15:33.027</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-125.png">
-      <PackagePath>logo_grandeLogo.scale-125.png</PackagePath>
-      <Modified>2024-06-16T02:15:32.996</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-100.png">
-      <PackagePath>logo_grandeLogo.scale-100.png</PackagePath>
-      <Modified>2024-06-16T02:15:32.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grande.ico">
       <PackagePath>logo_grande.ico</PackagePath>
       <Modified>2024-06-16T02:15:32.886</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-100.png">
+      <PackagePath>logo_grandeLargeTile.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-125.png">
+      <PackagePath>logo_grandeLargeTile.scale-125.png</PackagePath>
+      <Modified>2024-06-16T02:15:35.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-150.png">
+      <PackagePath>logo_grandeLargeTile.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:35.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-200.png">
+      <PackagePath>logo_grandeLargeTile.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:35.435</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLargeTile.scale-400.png">
+      <PackagePath>logo_grandeLargeTile.scale-400.png</PackagePath>
+      <Modified>2024-06-16T02:15:36.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.465</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.605</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>logo_grandeLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.324</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.433</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>logo_grandeLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.371</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-100.png">
+      <PackagePath>logo_grandeLogo.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:32.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-125.png">
+      <PackagePath>logo_grandeLogo.scale-125.png</PackagePath>
+      <Modified>2024-06-16T02:15:32.996</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-150.png">
+      <PackagePath>logo_grandeLogo.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-200.png">
+      <PackagePath>logo_grandeLogo.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.058</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.scale-400.png">
+      <PackagePath>logo_grandeLogo.scale-400.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-16.png">
+      <PackagePath>logo_grandeLogo.targetsize-16.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-24.png">
+      <PackagePath>logo_grandeLogo.targetsize-24.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-256.png">
+      <PackagePath>logo_grandeLogo.targetsize-256.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.277</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-32.png">
+      <PackagePath>logo_grandeLogo.targetsize-32.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeLogo.targetsize-48.png">
+      <PackagePath>logo_grandeLogo.targetsize-48.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.199</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-100.png">
+      <PackagePath>logo_grandeMediumTile.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-125.png">
+      <PackagePath>logo_grandeMediumTile.scale-125.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-150.png">
+      <PackagePath>logo_grandeMediumTile.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-200.png">
+      <PackagePath>logo_grandeMediumTile.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.154</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeMediumTile.scale-400.png">
+      <PackagePath>logo_grandeMediumTile.scale-400.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-100.png">
+      <PackagePath>logo_grandeSmallTile.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-125.png">
+      <PackagePath>logo_grandeSmallTile.scale-125.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-150.png">
+      <PackagePath>logo_grandeSmallTile.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-200.png">
+      <PackagePath>logo_grandeSmallTile.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeSmallTile.scale-400.png">
+      <PackagePath>logo_grandeSmallTile.scale-400.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.933</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-100.png">
+      <PackagePath>logo_grandeStoreLogo.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-125.png">
+      <PackagePath>logo_grandeStoreLogo.scale-125.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-150.png">
+      <PackagePath>logo_grandeStoreLogo.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-200.png">
+      <PackagePath>logo_grandeStoreLogo.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeStoreLogo.scale-400.png">
+      <PackagePath>logo_grandeStoreLogo.scale-400.png</PackagePath>
+      <Modified>2024-06-16T02:15:33.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-100.png">
+      <PackagePath>logo_grandeWideTile.scale-100.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.435</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-125.png">
+      <PackagePath>logo_grandeWideTile.scale-125.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-150.png">
+      <PackagePath>logo_grandeWideTile.scale-150.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-200.png">
+      <PackagePath>logo_grandeWideTile.scale-200.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_grandeWideTile.scale-400.png">
+      <PackagePath>logo_grandeWideTile.scale-400.png</PackagePath>
+      <Modified>2024-06-16T02:15:34.872</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.deps.json">
       <PackagePath>AppDesktop.deps.json</PackagePath>
-      <Modified>2024-06-16T02:15:39.716</Modified>
+      <Modified>2024-06-16T15:16:17.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -8,7 +8,7 @@
     Title="AppDesktop">
 
     <ShellContent
-        Title="Página principal"
+        Title=""
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
