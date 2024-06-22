@@ -79,9 +79,6 @@
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\agross.scale-100.jpg">
       <PackagePath>agross.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_cadastar_p_i.scale-100.jpg">
-      <PackagePath>img_cadastar_p_i.scale-100.jpg</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_cadastrar_cliente.scale-100.png">
       <PackagePath>img_cadastrar_cliente.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -99,6 +96,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_vendas.scale-100.png">
       <PackagePath>img_vendas.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\isumos_sem_fundo.scale-100.png">
+      <PackagePath>isumos_sem_fundo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_agrotech.scale-100.png">
       <PackagePath>logo_agrotech.scale-100.png</PackagePath>
