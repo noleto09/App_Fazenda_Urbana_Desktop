@@ -97,11 +97,6 @@ C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Deb
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
-C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
-C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
-C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
-C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
-C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.AssemblyInfoInputs.cache
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.AssemblyInfo.cs
@@ -183,3 +178,10 @@ C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Deb
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-200.png
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo_s_fundoSplashScreen.scale-400.png
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_login.scale-100.jpg
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_cadastar_p_i.scale-100.jpg
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_cadastrar_cliente.scale-100.png
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_configuracao.scale-100.png
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_home.scale-100.png
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_relatorio.scale-100.png
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_vendas.scale-100.png
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_agrotech.scale-100.png

@@ -48,7 +48,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -59,7 +58,14 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\agross.jpg" />
+	  <None Remove="Resources\Images\img_cadastar_p_i.jpg" />
+	  <None Remove="Resources\Images\img_cadastrar_cliente.png" />
+	  <None Remove="Resources\Images\img_configuracao.png" />
+	  <None Remove="Resources\Images\img_home.png" />
 	  <None Remove="Resources\Images\img_login.jpg" />
+	  <None Remove="Resources\Images\img_relatorio.png" />
+	  <None Remove="Resources\Images\img_vendas.png" />
+	  <None Remove="Resources\Images\logo_agrotech.png" />
 	</ItemGroup>
 
 	<ItemGroup>

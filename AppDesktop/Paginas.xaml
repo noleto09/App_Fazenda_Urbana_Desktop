@@ -1,12 +1,98 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppDesktop.Paginas"
-             Title="Paginas">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="">
+    <ContentPage.Content>
+        <Grid>
+
+            <!-- Definir colunas do Grid -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Menu lateral -->
+            <StackLayout 
+                x:Name="MenuLateral" 
+                BackgroundColor="#90ee90" 
+                VerticalOptions="FillAndExpand" 
+                WidthRequest="250" 
+                IsVisible="True">
+
+                <Image 
+                    Source="logo_agrotech.png" 
+                    HeightRequest="50" 
+                    Margin="10"
+                    Aspect="AspectFit" />
+
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Image 
+                            Source="img_configuracao.png" 
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            Aspect="AspectFit"/>
+                        <Label Text="Configuração" VerticalOptions="Center"/>
+                    </StackLayout>
+                   
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Image 
+                            Source="img_cadastrar_cliente.png" 
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            Aspect="AspectFit"/>
+                        <Label Text="Cadastrar cliente" VerticalOptions="Center"/>
+                    </StackLayout>
+                   
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Image 
+                            Source="img_vendas.png" 
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            Aspect="AspectFit"/>
+                        <Label Text="Vendas" VerticalOptions="Center"/>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Image 
+                            Source="img_cadastar_p_i.png" 
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            Aspect="AspectFit"/>
+                        <Label Text="Insumos e produtos" VerticalOptions="Center"/>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Image 
+                            Source="img_relatorio.png" 
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            Aspect="AspectFit"/>
+                        <Label Text="Relatórios" VerticalOptions="Center"/>
+                    </StackLayout>
+                
+                </StackLayout>
+            
+            </StackLayout>
+
+            <!-- Conteúdo principal -->
+            <StackLayout BackgroundColor="#98fb98" Grid.Column="1" VerticalOptions="FillAndExpand">
+                <ImageButton 
+                    Source="img_home.png" 
+                    Clicked="OnHomeButtonClicked" 
+                    HorizontalOptions="Start" 
+                    Margin="10"
+                    Aspect="AspectFit"/>
+
+                <Image 
+                    Source="logo_agrotech.png" 
+                    HeightRequest="50" 
+                    HorizontalOptions="End" 
+                    VerticalOptions="End" 
+                    Margin="10" 
+                    Aspect="AspectFit"/>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
