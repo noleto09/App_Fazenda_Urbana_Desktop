@@ -3,13 +3,7 @@
              x:Class="AppDesktop.Paginas"
              Title="">
     <ContentPage.Content>
-        <Grid>
-
-            <!-- Definir colunas do Grid -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <AbsoluteLayout>
 
             <!-- Menu lateral -->
             <StackLayout 
@@ -17,112 +11,133 @@
                 BackgroundColor="#90ee90" 
                 VerticalOptions="FillAndExpand" 
                 WidthRequest="250" 
-                IsVisible="True">
+                IsVisible="True"
+                AbsoluteLayout.LayoutBounds="0, 0, 250, 1"
+                AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional">
 
-                <Image 
-                    Source="logo_agrotech.png" 
-                    HeightRequest="50" 
-                    Margin="10"
-                    Aspect="AspectFit" />
-
-                <StackLayout>
-                    <StackLayout Orientation="Horizontal" Padding="6">
-                        <ImageButton 
-                            Source="img_configuracao.png" 
-                            HeightRequest="60"
-                            WidthRequest="60"
-                            Aspect="AspectFit"
-                             BackgroundColor="Transparent"
-                            Clicked="ImageButton_Clicked_1"/>
-                        <Button 
-                            Text="Configuração" 
-                            VerticalOptions="Center" 
-                            Clicked="ImageButton_Clicked_1"
-                            BackgroundColor="Transparent"/>
-                    </StackLayout>
-                    
-                    <StackLayout Orientation="Horizontal" Padding="10">
-                        <ImageButton 
-                            Source="img_cadastrar_cliente.png" 
-                            HeightRequest="30"
-                            WidthRequest="30"
-                            Aspect="AspectFit"
-                             BackgroundColor="Transparent"
-                            Clicked="Botao_cadastro_clicavel" />
-                        <Button 
-                            Text="Cadastrar cliente" 
-                            VerticalOptions="Center" 
-                            Clicked="Botao_cadastro_clicavel"
-                            BackgroundColor="Transparent"/>
-                    </StackLayout>
-                    
-                    <StackLayout Orientation="Horizontal" Padding="10">
-                        <ImageButton 
-                            Source="img_vendas.png" 
-                            HeightRequest="30"
-                            WidthRequest="30"
-                            Aspect="AspectFit"
-                            BackgroundColor="Transparent"
-                            Clicked="Botao_Vendas_clicavel"/>
-                        <Button 
-                            Text="Vendas" 
-                            VerticalOptions="Center" 
-                            Clicked="Botao_Vendas_clicavel"
-                             BackgroundColor="Transparent"/>
-                    </StackLayout>
-                    
-                    <StackLayout Orientation="Horizontal" Padding="10">
-                        <ImageButton 
-                            Source="isumos_sem_fundo.png" 
-                            HeightRequest="1"
-                            WidthRequest="50"
-                            Aspect="AspectFit"
-                            BackgroundColor="Transparent"
-                            Clicked="Botao_CadastarPI_clicavel"/>
-                        <Button 
-                            Text="Insumos e produtos" 
-                            VerticalOptions="Center" 
-                            Clicked="Botao_CadastarPI_clicavel"
-                            BackgroundColor="Transparent"/>
-                    </StackLayout>
-                    
-                    <StackLayout Orientation="Horizontal" Padding="10">
-                        <ImageButton 
-                            Source="img_relatorio.png" 
-                            HeightRequest="30"
-                            WidthRequest="30"
-                            Aspect="AspectFit"
-                            BackgroundColor="Transparent"
-                            Clicked="Botao_Relatorio_Clicavel"/>
-                        <Button 
-                            Text="Relatórios" 
-                            VerticalOptions="Center" 
-                            Clicked="Botao_Relatorio_Clicavel"
-                            BackgroundColor="Transparent"/>
-                    </StackLayout>
-                
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <ImageButton 
+                        Source="img_home.png" 
+                        Clicked="OnHomeButtonClicked"
+                        BackgroundColor="Transparent"
+                        HeightRequest="35"
+                        WidthRequest="35"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Start" />
                 </StackLayout>
-            
+
+                <StackLayout Orientation="Horizontal" Padding="6">
+                    <ImageButton 
+                        Source="img_configuracao.png" 
+                        HeightRequest="60"
+                        WidthRequest="60"
+                        Aspect="AspectFit"
+                        BackgroundColor="Transparent"
+                        Clicked="ImageButton_Clicked_1"/>
+                    <Button 
+                        Text="Configuração"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="Black"
+                        VerticalOptions="Center" 
+                        Clicked="ImageButton_Clicked_1"
+                        BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <ImageButton 
+                        Source="img_cadastrar_cliente.png" 
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Aspect="AspectFit"
+                        BackgroundColor="Transparent"
+                        Clicked="Botao_cadastro_clicavel" />
+                    <Button 
+                        Text="Cadastrar cliente"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="Black"
+                        VerticalOptions="Center" 
+                        Clicked="Botao_cadastro_clicavel"
+                        BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <ImageButton 
+                        Source="img_vendas.png" 
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Aspect="AspectFit"
+                        BackgroundColor="Transparent"
+                        Clicked="Botao_Vendas_clicavel"/>
+                    <Button 
+                        Text="Vendas"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="Black"
+                        VerticalOptions="Center" 
+                        Clicked="Botao_Vendas_clicavel"
+                        BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <ImageButton 
+                        Source="isumos_sem_fundo.png" 
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Aspect="AspectFit"
+                        BackgroundColor="Transparent"
+                        Clicked="Botao_CadastarPI_clicavel"/>
+                    <Button 
+                        Text="Insumos e produtos"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="Black"
+                        VerticalOptions="Center" 
+                        Clicked="Botao_CadastarPI_clicavel"
+                        BackgroundColor="Transparent"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <ImageButton 
+                        Source="img_relatorio.png" 
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Aspect="AspectFit"
+                        BackgroundColor="Transparent"
+                        Clicked="Botao_Relatorio_Clicavel"/>
+                    <Button 
+                        Text="Relatórios"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="Black"
+                        VerticalOptions="Center" 
+                        Clicked="Botao_Relatorio_Clicavel"
+                        BackgroundColor="Transparent"/>
+                </StackLayout>
+
             </StackLayout>
 
             <!-- Conteúdo principal -->
-            <StackLayout BackgroundColor="#98fb98" Grid.Column="1" VerticalOptions="FillAndExpand">
-                <ImageButton 
-                    Source="img_home.png" 
-                    Clicked="OnHomeButtonClicked" 
-                    HorizontalOptions="Start" 
-                    Margin="10"
-                    Aspect="AspectFit"/>
-
-                <Image 
-                    Source="logo_agrotech.png" 
-                    HeightRequest="50" 
-                    HorizontalOptions="End" 
-                    VerticalOptions="End" 
-                    Margin="10" 
-                    Aspect="AspectFit"/>
-
+            <StackLayout 
+                x:Name="MainContent"
+                BackgroundColor="#98fb98" 
+                VerticalOptions="FillAndExpand"
+                AbsoluteLayout.LayoutBounds="250, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional">
             </StackLayout>
-        </Grid>
+
+            <!-- Botão Home sempre visível no canto -->
+            <ImageButton 
+                Source="img_home.png" 
+                Clicked="OnHomeButtonClicked"
+                BackgroundColor="Transparent"
+                HeightRequest="35"
+                WidthRequest="30"
+                Aspect="AspectFit"
+                AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
+                AbsoluteLayout.LayoutFlags="None" />
+
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
