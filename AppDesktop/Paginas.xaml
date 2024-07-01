@@ -15,6 +15,7 @@
                 AbsoluteLayout.LayoutBounds="0, 0, 250, 1"
                 AbsoluteLayout.LayoutFlags="PositionProportional, HeightProportional">
 
+                <!-- Botões do menu lateral -->
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <ImageButton 
                         Source="img_home.png" 
@@ -137,6 +138,270 @@
                 Aspect="AspectFit"
                 AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
                 AbsoluteLayout.LayoutFlags="None" />
+
+            <!-- Página de Vendas -->
+            <ContentView 
+                x:Name="VendasPage"
+                BackgroundColor="#F5FFFA"
+                IsVisible="False"
+                AbsoluteLayout.LayoutBounds="250, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional">
+
+                
+                <!-- Conteúdo da página de vendas -->
+                <ContentView>
+                    
+                    
+                    <StackLayout Padding="0">
+                        
+
+                        <Grid Padding="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Linha colorida -->
+                            <BoxView
+                                Color="#D3D3D3"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Grid.Row="0"
+                                HeightRequest="40"
+                                Margin="0,0,50,250"
+                                />
+
+                            <!-- Label do título -->
+                            <Label
+                                Text="Vendas"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                TextColor="Black"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="1"
+                                Grid.Row="1"
+                                VerticalTextAlignment="Center"
+                                Margin="20,0,0,250"
+                                HorizontalTextAlignment="Start"/>
+
+                            <!-- Label para Número da Venda -->
+                            <Label 
+                                Text="Número da Venda:"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="10,0,0,20" />
+
+                            <!-- Entrada para Número da Venda -->
+                            <Entry 
+                                Placeholder="N°"
+                                HorizontalOptions="Start"
+                                VerticalOptions="CenterAndExpand"
+                                WidthRequest="110"
+                                HeightRequest="0"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="140,20,0,60" />
+
+                            <Label 
+                                Text="Data:" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="350,0,0,20"/>
+
+                            <Entry 
+                                Placeholder="Data" 
+                                HorizontalOptions="Start"
+                                VerticalOptions="CenterAndExpand"
+                                WidthRequest="110"
+                                HeightRequest="0"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="390,20,0,60"/>
+
+                            <Label 
+                                Text="Hora:" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="590,0,0,20" />
+
+                            <Entry 
+                                Placeholder="Hora" 
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                WidthRequest="110"
+                                HeightRequest="5"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="630,20,0,60"/>
+
+                            <!-- Botão para ver informacoes do cliente antes de finalizar a venda -->
+
+
+                            <Button
+                                Text="Informações do Cliente"
+                                Clicked="Botao_Informacoes_Cliente"
+                                BackgroundColor="#A9A9A9"
+                                TextColor="Black"
+                                VerticalOptions="Center"
+                                HorizontalOptions="CenterAndExpand"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="300,190,0,0"
+                                />
+
+                            <Label 
+                                Text="VENDEDOR:"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="10,140,0,0"/>
+
+                            <Entry 
+                                Placeholder="Vendedor"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                WidthRequest="200"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="95,185,0,0"/>
+
+                            <Label 
+                                Text="Cliente:"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="10,250,0,0"/>
+
+                            <Entry 
+                                Placeholder="Cliente"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                WidthRequest="200"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="70,240,0,0"/>
+
+
+                        </Grid>
+                        
+
+                        <Grid Padding="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label 
+                                Text="Produto:" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="10,20,0,0"/>
+                            <Entry 
+                                Placeholder="Produto"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                WidthRequest="100"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="90,35,0,0"/>
+
+                            <Label 
+                                Text="Quantidade:" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="250,20,0,0"/>
+                            <Entry 
+                                Placeholder="Qt" 
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                WidthRequest="30"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="345,20,0,0"/>
+
+                            <Label 
+                                Text="Valor:" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="450,20,0,0"/>
+                            <Entry 
+                                Placeholder="Valor"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="500,20,0,0"/>
+
+                            <Label 
+                                Text="Desconto:"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="620,20,0,0"/>
+                            <Entry 
+                                Placeholder="Desconto" 
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                WidthRequest="200"
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                Margin="10,20,0,0"/>
+                            
+
+                            
+
+
+                        </Grid>
+
+
+                        <Grid Padding="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label 
+                                Text="Forma de Pagamento:" 
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="10,60,0,0"/>
+                        <Entry 
+                                Placeholder="Forma de Pagamento"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                WidthRequest="200"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Margin="170,50,0,0"/>
+
+                        </Grid>
+
+                    </StackLayout>
+
+                   
+
+                </ContentView>
+
+                
+
+            </ContentView>
 
         </AbsoluteLayout>
     </ContentPage.Content>
