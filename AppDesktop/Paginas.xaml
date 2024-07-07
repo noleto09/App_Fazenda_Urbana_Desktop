@@ -3,6 +3,8 @@
              x:Class="AppDesktop.Paginas"
              Title="">
     <ContentPage.Content>
+        
+        
         <AbsoluteLayout>
 
             <!-- Menu lateral -->
@@ -142,7 +144,7 @@
             <!-- Página de Vendas -->
             <ContentView 
                 x:Name="VendasPage"
-                BackgroundColor="#F5FFFA"
+                BackgroundColor="#F8F8FF"
                 IsVisible="False"
                 AbsoluteLayout.LayoutBounds="250, 0, 1, 1"
                 AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional">
@@ -304,8 +306,8 @@
                                 VerticalOptions="Center"
                                 HorizontalOptions="Start"
                                 Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="10,20,0,0"/>
+                                Grid.Row="0"
+                                Margin="10,55,0,0"/>
                             <Entry 
                                 Placeholder="Produto"
                                 HorizontalOptions="Start"
@@ -320,78 +322,112 @@
                                 VerticalOptions="Center"
                                 HorizontalOptions="Start"
                                 Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="250,20,0,0"/>
+                                Grid.Row="0"
+                                Margin="250,55,0,0"/>
                             <Entry 
                                 Placeholder="Qt" 
                                 HorizontalOptions="Start"
                                 VerticalOptions="Start"
                                 WidthRequest="30"
                                 Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="345,20,0,0"/>
+                                Grid.Row="0"
+                                Margin="345,35,0,0"/>
 
                             <Label 
                                 Text="Valor:" 
                                 VerticalOptions="Center"
                                 HorizontalOptions="Start"
                                 Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="450,20,0,0"/>
+                                Grid.Row="0"
+                                Margin="450,55,0,0"/>
                             <Entry 
                                 Placeholder="Valor"
                                 HorizontalOptions="Start"
                                 VerticalOptions="Start"
                                 Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="500,20,0,0"/>
+                                Grid.Row="0"
+                                Margin="500,35,0,0"/>
 
                             <Label 
                                 Text="Desconto:"
                                 VerticalOptions="Center"
                                 HorizontalOptions="Start"
                                 Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="620,20,0,0"/>
+                                Grid.Row="0"
+                                Margin="620,55,0,0"/>
                             <Entry 
                                 Placeholder="Desconto" 
                                 HorizontalOptions="Start"
                                 VerticalOptions="Start"
                                 WidthRequest="200"
-                                Grid.Column="1"
-                                Grid.Row="1"
-                                Margin="10,20,0,0"/>
-                            
-
-                            
-
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Margin="704,35,0,0"/>
 
                         </Grid>
-
 
                         <Grid Padding="0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
 
                             <Label 
-                                Text="Forma de Pagamento:" 
-                                VerticalOptions="Center"
-                                HorizontalOptions="Start"
-                                Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="10,60,0,0"/>
-                        <Entry 
-                                Placeholder="Forma de Pagamento"
-                                HorizontalOptions="Start"
-                                VerticalOptions="Start"
-                                WidthRequest="200"
-                                Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="170,50,0,0"/>
+                            Text="Forma de Pagamento:" 
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Margin="10,60,0,0"/>
 
+                            <Picker
+                            x:Name="paymentMethodPicker"
+                            Title="Forma de Pagamento"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Start"
+                            WidthRequest="200"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            Margin="10,60,0,0">
+                                <Picker.Items>
+                                    <x:String>Cartão de Débito</x:String>
+                                    <x:String>Cartão de Crédito</x:String>
+                                    <x:String>Boleto</x:String>
+                                    <x:String>À Vista</x:String>
+                                </Picker.Items>
+                            </Picker>
+
+                            <Label 
+                            Text="Parcelas:" 
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Margin="10,20,0,0"/>
+
+                            <Picker
+                            x:Name="parcelasPicker"
+                            Title="Parcelas"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Start"
+                            WidthRequest="200"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            Margin="10,20,0,0">
+                                <Picker.Items>
+                                    <x:String>1x s/juros</x:String>
+                                    <x:String>2x s/juros</x:String>
+                                    <x:String>3x s/juros</x:String>
+                                    <x:String>4x s/juros</x:String>
+                                    <x:String>5x s/juros</x:String>
+                                </Picker.Items>
+                            </Picker>
                         </Grid>
+
 
                     </StackLayout>
 

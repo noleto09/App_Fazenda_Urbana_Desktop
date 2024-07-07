@@ -6,6 +6,7 @@ namespace AppDesktop {
     public partial class Paginas : ContentPage {
         public Paginas() {
             InitializeComponent();
+            paymentMethodPicker.SelectedIndexChanged += PaymentMethodPicker_SelectedIndexChanged;
         }
 
         private void OnHomeButtonClicked(object sender, EventArgs e) {
@@ -48,19 +49,25 @@ namespace AppDesktop {
         }
 
         private void ShowVendasPage() {
-            // Oculta o menu lateral
-            //MenuLateral.IsVisible = false;
-            // Mostra a página de vendas
+           
             VendasPage.IsVisible = true;
             // Define o layout do MainContent para não cobrir a página de vendas
             AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
             AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
         }
 
-
         private void Botao_Informacoes_Cliente(object sender, EventArgs e) {
-
+            // Lógica para o botão de informações do cliente
         }
-        // Lógica para o botão de relatórios
+
+        private void PaymentMethodPicker_SelectedIndexChanged(object sender, EventArgs e) {
+            var selectedPaymentMethod = paymentMethodPicker.SelectedItem?.ToString();
+            if (selectedPaymentMethod == "À Vista" || selectedPaymentMethod == "Cartão de Débito") {
+                parcelasPicker.IsEnabled = false;
+                parcelasPicker.SelectedIndex = -1; // Clear selection
+            } else {
+                parcelasPicker.IsEnabled = true;
+            }
+        }
     }
-    }
+}
