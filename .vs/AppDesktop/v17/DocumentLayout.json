@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\appdesktop\\paginas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\paginas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|c:\\users\\lenovo\\documents\\software fazenda desktop\\appdesktop\\appdesktop\\paginas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\paginas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\appdesktop\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\appdesktop\\paginas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\paginas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\MainPage.xaml",
-              "RelativeDocumentMoniker": "AppDesktop\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\MainPage.xaml",
-              "RelativeToolTip": "AppDesktop\\MainPage.xaml",
-              "ViewState": "AQIAADUAAAAAAAAAAAAuwFoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-26T15:30:23.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Paginas.xaml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\Paginas.xaml",
               "RelativeDocumentMoniker": "AppDesktop\\Paginas.xaml",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\Paginas.xaml",
               "RelativeToolTip": "AppDesktop\\Paginas.xaml",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAqwH0AAAAkAAAA",
+              "ViewState": "AQIAAGYCAAAAAAAAAAAQwHwCAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-16T21:27:14.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Paginas.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\Paginas.xaml.cs",
               "RelativeDocumentMoniker": "AppDesktop\\Paginas.xaml.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\Paginas.xaml.cs",
               "RelativeToolTip": "AppDesktop\\Paginas.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAD0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T20:46:52.108Z",
               "EditorCaption": ""

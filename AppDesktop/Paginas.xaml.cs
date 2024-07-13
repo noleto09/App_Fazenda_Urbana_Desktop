@@ -6,25 +6,12 @@ namespace AppDesktop {
     public partial class Paginas : ContentPage {
         public Paginas() {
             InitializeComponent();
+
             paymentMethodPicker.SelectedIndexChanged += PaymentMethodPicker_SelectedIndexChanged;
         }
 
         private void OnHomeButtonClicked(object sender, EventArgs e) {
-            if (MenuLateral.IsVisible) {
-                // Oculta o menu lateral
-                MenuLateral.IsVisible = false;
-                // Expande o MainContent para preencher a tela inteira
-                AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(0, 0, 1, 1));
-                AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.All);
-                // Oculta a página de vendas se estiver visível
-                VendasPage.IsVisible = false;
-            } else {
-                // Exibe o menu lateral
-                MenuLateral.IsVisible = true;
-                // Define o layout do MainContent para a posição original
-                AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
-                AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
-            }
+            // Lógica para o botão inicial
         }
 
         private void ImageButton_Clicked_1(object sender, EventArgs e) {
@@ -49,7 +36,6 @@ namespace AppDesktop {
         }
 
         private void ShowVendasPage() {
-           
             VendasPage.IsVisible = true;
             // Define o layout do MainContent para não cobrir a página de vendas
             AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
@@ -68,6 +54,23 @@ namespace AppDesktop {
             } else {
                 parcelasPicker.IsEnabled = true;
             }
+        }
+
+        private void Button_Nova_venda(object sender, EventArgs e) {
+            // Habilita o campo de texto de desconto
+            DescontoEntry.IsEnabled = true;
+            ClienteEntry.IsEnabled = true;
+            ProdutoEntry.IsEnabled = true;
+            QuantidadeEntry.IsEnabled = true;
+            
+        }
+
+        private void Button_Confirmacao(object sender, EventArgs e) {
+
+            String ProdutoDigitado = ProdutoEntry.Text;
+
+            // Atualiza o Label com o nome digitado
+            Produtonacaixa.Text = ProdutoDigitado;
         }
     }
 }
