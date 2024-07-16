@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics; // Certifique-se de que este namespace está incluído
 using Microsoft.Maui.Layouts;
 using System;
 
@@ -6,7 +7,6 @@ namespace AppDesktop {
     public partial class Paginas : ContentPage {
         public Paginas() {
             InitializeComponent();
-
             paymentMethodPicker.SelectedIndexChanged += PaymentMethodPicker_SelectedIndexChanged;
         }
 
@@ -57,20 +57,125 @@ namespace AppDesktop {
         }
 
         private void Button_Nova_venda(object sender, EventArgs e) {
-            // Habilita o campo de texto de desconto
+            // Habilita os campos de texto
             DescontoEntry.IsEnabled = true;
             ClienteEntry.IsEnabled = true;
             ProdutoEntry.IsEnabled = true;
             QuantidadeEntry.IsEnabled = true;
-            
         }
 
         private void Button_Confirmacao(object sender, EventArgs e) {
+            string produtoDigitado = ProdutoEntry.Text;
+            string QuantidadeDigitado = QuantidadeEntry.Text;
+            string PrecounDigitado = Preco_UnitarioEntry.Text;
+            string DescontoDigitado = DescontoEntry.Text;
+            string ValorTotalDigitado = ValorToTalEntry.Text;
 
-            String ProdutoDigitado = ProdutoEntry.Text;
 
-            // Atualiza o Label com o nome digitado
-            Produtonacaixa.Text = ProdutoDigitado;
+            // Cria uma nova linha para o produto dentro de um Frame
+            var productLayout = new StackLayout {
+                Orientation = StackOrientation.Horizontal,
+                Children =
+                {
+                    new Label { Text = produtoDigitado, WidthRequest = 100 },
+                    
+                }
+            };
+
+            var QuantidadeLayout = new StackLayout {
+                Orientation = StackOrientation.Horizontal,
+                Children =
+               {
+                    new Label { Text = QuantidadeDigitado, WidthRequest = 100 },
+
+                }
+            };
+
+            var PrecoUnLayout = new StackLayout {
+                Orientation = StackOrientation.Horizontal,
+                Children =
+               {
+                    new Label { Text =PrecounDigitado, WidthRequest = 100 },
+
+                }
+            };
+
+            var DescontoLayout = new StackLayout {
+                Orientation = StackOrientation.Horizontal,
+                Children =
+               {
+                    new Label { Text = DescontoDigitado, WidthRequest = 100 },
+
+                }
+            };
+
+            var ValorTotalLayout = new StackLayout {
+                Orientation = StackOrientation.Horizontal,
+                Children =
+               {
+                    new Label { Text = ValorTotalDigitado, WidthRequest = 100 },
+
+                }
+            };
+
+
+            var productFrame = new Frame {
+                Content = productLayout,
+                BackgroundColor = Colors.White,
+                BorderColor = Colors.Gainsboro,
+                CornerRadius = 0,
+                Padding = new Thickness(5,2),
+                Margin = new Thickness(0, 0)
+            };
+
+            var QuantidadeFrame = new Frame {
+                Content = QuantidadeLayout,
+                BackgroundColor = Colors.White,
+                BorderColor = Colors.Gainsboro,
+                CornerRadius = 0,
+                Padding = new Thickness(5, 2),
+                Margin = new Thickness(0, 0)
+            };
+
+            var PrecoUnFrame = new Frame {
+                Content = PrecoUnLayout,
+                BackgroundColor = Colors.White,
+                BorderColor = Colors.Gainsboro,
+                CornerRadius = 0,
+                Padding = new Thickness(5, 2),
+                Margin = new Thickness(0, 0)
+            };
+
+            var DescontoFrame = new Frame {
+                Content = DescontoLayout,
+                BackgroundColor = Colors.White,
+                BorderColor = Colors.Gainsboro,
+                CornerRadius = 0,
+                Padding = new Thickness(5, 2),
+                Margin = new Thickness(0, 0)
+            };
+
+            var valorTotalFrame = new Frame {
+                Content = ValorTotalLayout,
+                BackgroundColor = Colors.White,
+                BorderColor = Colors.Gainsboro,
+                CornerRadius = 0,
+                Padding = new Thickness(5, 2),
+                Margin = new Thickness(0, 0)
+            };
+
+
+            // Adiciona o produto ao StackLayout
+            ProductStackLayout.Children.Add(productFrame);
+            LinhaQuantidade.Children.Add(QuantidadeFrame);
+            LinhaPrecoUn.Children.Add(PrecoUnFrame);
+            LinhaDesconto.Children.Add(DescontoFrame);
+            LinhaValorTotal.Children.Add(valorTotalFrame);
+
+
+
+
         }
     }
 }
+

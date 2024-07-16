@@ -481,13 +481,20 @@
                         </Grid>
 
                         <Grid>
-
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
 
                             <!--Botôes de ação-->
                             <Button 
@@ -495,42 +502,44 @@
                                 Clicked="Button_Nova_venda"
                                 VerticalOptions="Center"
                                 WidthRequest="110"
-                                HeightRequest="5"
-                                Margin="750,0,0,150"
-                                HorizontalOptions="Start"
+                                HeightRequest="50"
+                                Margin="0,35,280,0"
+                                Grid.Row="0"
+                                Grid.Column="4"
+                                HorizontalOptions="Center"
                                 BackgroundColor="#B0C4DE" />
 
                             <Button 
                                 Text="Alterar"
                                 WidthRequest="110"
-                                HeightRequest="5"
-                                Grid.Column="0"
-                                Grid.Row="0"
-                                Margin="750,0,0,50"
-                                HorizontalOptions="Start"
-                                VerticalOptions="Center"
+                                HeightRequest="50"
+                                Margin="0,5,280,0"
+                                Grid.Row="1"
+                                Grid.Column="4"
+                                HorizontalOptions="Center"
                                 BackgroundColor="#00CED1" />
 
                             <Button 
                                 Text="Confirmar"
                                 Clicked="Button_Confirmacao"
                                 WidthRequest="110"
-                                HeightRequest="5"
-                                Grid.Column="0"
-                                Grid.Row="0"
-                                Margin="750,50,0,0"
+                                HeightRequest="50"
+                                Margin="0,0,280,50"
+                                Grid.Row="2"
+                                Grid.Column="4"
+                                HorizontalOptions="Center"
                                 BackgroundColor="#32CD32" />
 
                             <Button 
                                 Text="Cancelar"
                                 WidthRequest="110"
                                 HeightRequest="50"
-                                Grid.Column="0"
-                                Grid.Row="0"
-                                Margin="750,155,0,0"
+                                Margin="0,60,280,0"
+                                Grid.Row="2"
+                                Grid.Column="4"
+                                HorizontalOptions="Center"
                                 BackgroundColor="#FF0000" />
 
-                            
                             <!--Tela de atualização-->
                             <Frame 
                                 BackgroundColor="LightGray" 
@@ -538,114 +547,164 @@
                                 HeightRequest="45"
                                 CornerRadius="0" 
                                 Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="50,0,0,90">
-                            <Label 
-                                Text="ID"
-                                FontSize="15" 
-                                HorizontalOptions="Start" 
-                                VerticalOptions="Center" />
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Margin="30,39,0,0">
+                                <Label 
+                                    Text="ID"
+                                    FontSize="15" 
+                                    HorizontalOptions="Start" 
+                                    VerticalOptions="Center" />
                             </Frame>
-                            
-                           
-                            
+
                             <Frame 
                                 BackgroundColor="LightGray" 
                                 WidthRequest="100"
                                 HeightRequest="45"
                                 CornerRadius="0" 
                                 Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="100,0,0,90">
-                            <Label 
-                                Text="PRODUTO:" 
-                                FontSize="15" 
-                                HorizontalOptions="Start" 
-                                VerticalOptions="Center" />
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Margin="0,39,0,0">
+                                <Label 
+                                    Text="PRODUTO:" 
+                                    FontSize="15" 
+                                    HorizontalOptions="Start" 
+                                    VerticalOptions="Center" />
                             </Frame>
-                            
+
                             <Frame 
                                 BackgroundColor="LightGray" 
                                 WidthRequest="120"
                                 HeightRequest="45"
                                 CornerRadius="0" 
                                 Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="200,0,0,90">
-                            <Label 
-                                Text="QUANTIDADE:" 
-                                FontSize="15" 
-                                HorizontalOptions="Start" 
-                                VerticalOptions="Center" />
+                                Grid.Row="0"
+                                Grid.Column="3"
+                                Margin="0,39,404,0">
+                                <Label 
+                                    Text="QUANTIDADE:" 
+                                    FontSize="15" 
+                                    HorizontalOptions="Start" 
+                                    VerticalOptions="Center" />
                             </Frame>
-                            
+
                             <Frame 
                                 BackgroundColor="LightGray" 
                                 WidthRequest="100"
                                 HeightRequest="45"
                                 CornerRadius="0" 
                                 Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="320,0,0,90">
-                            <Label 
-                                Text="PREÇO UN:" 
-                                FontSize="15" 
-                                HorizontalOptions="Start" 
-                                VerticalOptions="Center" />
+                                Grid.Row="0"
+                                Grid.Column="3"
+                                Margin="0,39,184,0">
+                                <Label 
+                                    Text="PREÇO UN:" 
+                                    FontSize="15" 
+                                    HorizontalOptions="Start" 
+                                    VerticalOptions="Center" />
                             </Frame>
-                            
+
                             <Frame 
                                 BackgroundColor="LightGray" 
                                 WidthRequest="105"
                                 HeightRequest="45"
                                 CornerRadius="0" 
                                 Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="420,0,0,90">
-                            <Label 
-                                Text="DESCONTO:" 
-                                FontSize="15" 
-                                HorizontalOptions="Start" 
-                                VerticalOptions="Center" />
+                                Grid.Row="0"
+                                Grid.Column="3"
+                                Margin="21,39,0,0">
+                                <Label 
+                                    Text="DESCONTO:" 
+                                    FontSize="15" 
+                                    HorizontalOptions="Start" 
+                                    VerticalOptions="Center" />
                             </Frame>
-                            
+
                             <Frame 
                                 BackgroundColor="LightGray" 
                                 WidthRequest="124"
                                 HeightRequest="45"
                                 CornerRadius="0" 
                                 Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="525,0,0,90">
-                            <Label 
-                                Text="VALOR TOTAL:" 
-                                FontSize="15" 
-                                HorizontalOptions="Start" 
+                                Grid.Row="0"
+                                Grid.Column="3"
+                                Margin="250,39,0,0">
+                                <Label 
+                                    Text="VALOR TOTAL:" 
+                                     FontSize="15" 
+                                    HorizontalOptions="Start" 
                                 VerticalOptions="Center" />
                             </Frame>
 
-                            <Frame
-                                BackgroundColor="White" 
-                                WidthRequest="100"
-                                HeightRequest="40"
-                                CornerRadius="0" 
-                                Padding="10"
-                                HorizontalOptions="Start"
-                                Margin="100,0,0,0">
+                            
+                                <!-- Adicione o StackLayout para a lista de produtos -->
+                                <StackLayout
+                                    x:Name="ProductStackLayout"
+                                    Orientation="Vertical"
+                                    WidthRequest="100"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Grid.ColumnSpan="4"
+                                    Grid.RowSpan="6"
+                                    HorizontalOptions="Start"
+                                    Margin="80,0,0,0">
+                                </StackLayout>
 
-                                <Label 
-                                x:Name="Produtonacaixa"
-                                FontSize="15" 
-                                HorizontalOptions="Center"
-                                    Margin="0,0,0,0"/>
+                            <StackLayout
+                                    x:Name="LinhaQuantidade"
+                                    Orientation="Vertical"
+                                    WidthRequest="120"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Grid.ColumnSpan="6"
+                                    Grid.RowSpan="6"
+                                    HorizontalOptions="Start"
+                                    Margin="180,0,0,0">
+                            </StackLayout>
 
-                            </Frame>
+                            <StackLayout
+                                    x:Name="LinhaPrecoUn"
+                                    Orientation="Vertical"
+                                    WidthRequest="100"
+                                    Grid.Row="1"
+                                    Grid.Column="3"
+                                    Grid.ColumnSpan="4"
+                                    Grid.RowSpan="6"
+                                    HorizontalOptions="Start"
+                                    Margin="120,0,0,0">
+                            </StackLayout>
+
+                            <StackLayout
+                                    x:Name="LinhaDesconto"
+                                    Orientation="Vertical"
+                                    WidthRequest="105"
+                                    Grid.Row="1"
+                                    Grid.Column="3"
+                                    Grid.ColumnSpan="4"
+                                    Grid.RowSpan="6"
+                                    HorizontalOptions="Start"
+                                    Margin="220,0,0,0">
+                            </StackLayout>
+
+                            <StackLayout
+                                    x:Name="LinhaValorTotal"
+                                    Orientation="Vertical"
+                                    WidthRequest="124"
+                                    Grid.Row="1"
+                                    Grid.Column="3"
+                                    Grid.ColumnSpan="4"
+                                    Grid.RowSpan="6"
+                                    HorizontalOptions="Start"
+                                    Margin="325,0,0,0">
+                            </StackLayout>
+
+
 
                         </Grid>
 
 
-                        
-                        
+                       
 
                     </StackLayout>
 
