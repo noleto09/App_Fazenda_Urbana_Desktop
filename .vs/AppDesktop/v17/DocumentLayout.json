@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\appdesktop\\paginas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|c:\\users\\lenovo\\documents\\software fazenda desktop\\appdesktop\\appdesktop\\paginas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{30BD36A0-0D4B-43D7-87E5-37458E51BC4C}|AppDesktop\\AppDesktop.csproj|solutionrelative:appdesktop\\paginas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -28,9 +28,9 @@
               "RelativeDocumentMoniker": "AppDesktop\\Paginas.xaml",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\Paginas.xaml",
               "RelativeToolTip": "AppDesktop\\Paginas.xaml",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAswKoAAAAAAAAA",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAqwGkBAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T21:27:14.149Z",
+              "WhenOpened": "2024-07-22T22:40:34.453Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -42,9 +42,9 @@
               "RelativeDocumentMoniker": "AppDesktop\\Paginas.xaml.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Documents\\SOFTWARE FAZENDA DESKTOP\\AppDesktop\\AppDesktop\\Paginas.xaml.cs",
               "RelativeToolTip": "AppDesktop\\Paginas.xaml.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAwwKkAAAA6AAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwJ8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T20:46:52.108Z",
+              "WhenOpened": "2024-07-22T22:42:58.693Z",
               "EditorCaption": ""
             }
           ]

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-16T22:51:51.630</Modified>
+      <Modified>2024-07-22T23:37:28.741</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-07-14T22:34:15.093</Modified>
+      <Modified>2024-07-22T23:37:27.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.runtimeconfig.json">
       <PackagePath>AppDesktop.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.dll">
       <PackagePath>AppDesktop.dll</PackagePath>
-      <Modified>2024-07-16T22:51:44.310</Modified>
+      <Modified>2024-07-22T23:37:22.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppDesktop.exe</PackagePath>
-      <Modified>2024-07-16T22:51:44.647</Modified>
+      <Modified>2024-07-22T23:37:22.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -122,9 +122,17 @@
       <PackagePath>img_login.scale-100.jpg</PackagePath>
       <Modified>2024-05-19T22:14:11.300</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_lupa.scale-100.png">
+      <PackagePath>img_lupa.scale-100.png</PackagePath>
+      <Modified>2024-07-21T23:10:58.574</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_relatorio.scale-100.png">
       <PackagePath>img_relatorio.scale-100.png</PackagePath>
       <Modified>2024-05-18T21:02:37.397</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_salvar_semfundo.scale-100.png">
+      <PackagePath>img_salvar_semfundo.scale-100.png</PackagePath>
+      <Modified>2024-07-22T23:32:59.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img_vendas.scale-100.png">
       <PackagePath>img_vendas.scale-100.png</PackagePath>
@@ -322,9 +330,13 @@
       <PackagePath>logo_grandeWideTile.scale-400.png</PackagePath>
       <Modified>2024-06-16T02:15:34.872</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_img_semfundo.scale-100.png">
+      <PackagePath>user_img_semfundo.scale-100.png</PackagePath>
+      <Modified>2024-07-22T23:17:55.125</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.deps.json">
       <PackagePath>AppDesktop.deps.json</PackagePath>
-      <Modified>2024-06-23T15:30:03.660</Modified>
+      <Modified>2024-07-22T23:37:27.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

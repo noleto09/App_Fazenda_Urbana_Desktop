@@ -19,15 +19,16 @@
 
                 <!-- Botões do menu lateral -->
                 <StackLayout Orientation="Horizontal" Padding="10">
-                    <ImageButton 
+                    <Image 
                         Source="img_home.png" 
-                        Clicked="OnHomeButtonClicked"
                         BackgroundColor="Transparent"
                         HeightRequest="35"
                         WidthRequest="35"
                         Aspect="AspectFit"
                         HorizontalOptions="Start" />
                 </StackLayout>
+                
+               
 
                 <StackLayout Orientation="Horizontal" Padding="6">
                     <ImageButton 
@@ -36,14 +37,14 @@
                         WidthRequest="60"
                         Aspect="AspectFit"
                         BackgroundColor="Transparent"
-                        Clicked="ImageButton_Clicked_1"/>
+                        Clicked="Botao_Configuracao"/>
                     <Button 
                         Text="Configuração"
                         FontAttributes="Bold"
                         FontSize="18"
                         TextColor="Black"
                         VerticalOptions="Center" 
-                        Clicked="ImageButton_Clicked_1"
+                        Clicked="Botao_Configuracao"
                         BackgroundColor="Transparent"/>
                 </StackLayout>
 
@@ -131,9 +132,8 @@
             </StackLayout>
 
             <!-- Botão Home sempre visível no canto -->
-            <ImageButton 
+            <Image 
                 Source="img_home.png" 
-                Clicked="OnHomeButtonClicked"
                 BackgroundColor="Transparent"
                 HeightRequest="35"
                 WidthRequest="30"
@@ -141,13 +141,307 @@
                 AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
                 AbsoluteLayout.LayoutFlags="None" />
 
+            <!--Página de configurações-->
+            <ContentView
+                x:Name="configuracaoPage"
+                BackgroundColor="#F8F8FF"
+                Margin="25,0,0,0"
+                IsVisible="False"
+                AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"
+                AbsoluteLayout.LayoutFlags="None">
+
+                <ScrollView>
+                    <StackLayout>
+
+                        <Grid>
+
+                            <Label 
+                                Text="Configurações" 
+                                FontSize="20" 
+                                FontAttributes="Bold" 
+                                TextColor="Black" 
+                                Margin="0,0,0,0"
+                                VerticalOptions="Fill"
+                                HorizontalOptions="Start" 
+                                Grid.Row="0" 
+                                Grid.Column="0"
+                                Grid.ColumnSpan="6" />
+
+                        </Grid>
+
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                               
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                        <Button
+                            Clicked="Button_Cadastrar_Usuario"
+                            Text="Cadastrar Funcionários"
+                            Margin="50,20,0,0"
+                            FontSize="Body"
+                            TextColor="Black"
+                            WidthRequest="190"
+                            BackgroundColor="LightGrey"
+                            Grid.Row="0"/>
+
+                        <Button
+                            Text="Manual de Ajuda"
+                            Margin="50,10,0,0"
+                            FontSize="Body"
+                            TextColor="Black"
+                            WidthRequest="190"
+                            BackgroundColor="LightGrey"
+                            Grid.Row="1"/>
+
+                        <Button
+                            Text="Atualização"
+                            Margin="50,10,0,0"
+                            FontSize="Body"
+                            TextColor="Black"
+                            WidthRequest="190"
+                            BackgroundColor="LightGrey"
+                            Grid.Row="2"/>
+
+                        <Button
+                            Text="Suporte e Ajuda"
+                            Margin="50,10,0,0"
+                            FontSize="Body"
+                            TextColor="Black"
+                            WidthRequest="190"
+                            BackgroundColor="LightGrey"
+                            Grid.Row="3"/>
+                        
+                    </Grid>
+
+                       
+
+                    </StackLayout>
+                    
+                </ScrollView>
+                
+                
+            </ContentView>
+
+            <ContentView x:Name="Pagina_Cadastrar_Usuario" BackgroundColor="White" Margin="25,0,0,0"
+                IsVisible="False" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="None">
+
+                <StackLayout>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="500"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        
+                    <Label 
+                    Text="Cadastro de usuário" 
+                    FontSize="20" 
+                    FontAttributes="Bold" 
+                    TextColor="Black" 
+                    Margin="0,0,0,0"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Start"/>
+
+                <Label 
+                    Text="Nome:" 
+                    FontSize="15" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" 
+                    WidthRequest="150" 
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Margin="10,70,0,0"/>
+                <Entry
+                    Placeholder="NOME"
+                    HorizontalOptions="StartAndExpand" 
+                    WidthRequest="200" 
+                    HeightRequest="20"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Margin="70,45,0,0"/>
+
+                        <Button
+                            Text="CONSULTAR"
+                            FontSize="19"
+                            BackgroundColor="Black"
+                            WidthRequest="160"
+                            HeightRequest="0"
+                            Grid.Column="6"
+                            Grid.Row="0"
+                            Margin="250,40,0,0"
+                            Padding="45,10,0,15" />
+
+                        <Button
+                            Text="ALTERAR"
+                            FontSize="19"
+                            BackgroundColor="LightGrey"
+                            WidthRequest="160"
+                            HeightRequest="0"
+                            Grid.Column="6"
+                            Grid.ColumnSpan="6"
+                            Grid.Row="1"
+                            Margin="250,0,0,0"
+                            Padding="0,10,0,10" />
+
+                        <Button
+                            Text="NOVO"
+                            FontSize="19"
+                            BackgroundColor="#00BFFF"
+                            WidthRequest="160"
+                            HeightRequest="0"
+                            Grid.Column="6"
+                            Grid.ColumnSpan="6"
+                            Grid.Row="1"
+                            Grid.RowSpan="4"
+                            Margin="250,0,0,10"
+                            Padding="0,10,0,10" />
+
+                        <Button
+                            Text="SALVAR"
+                            FontSize="19"
+                            BackgroundColor="#32CD32"
+                            WidthRequest="160"
+                            HeightRequest="0"
+                            Grid.Column="6"
+                            Grid.ColumnSpan="6"
+                            Grid.Row="2"
+                            Grid.RowSpan="4"
+                            Margin="250,50,0,10"
+                            Padding="0,10,0,10" />
+
+                        <Image 
+                            Source="img_lupa.png" 
+                            HeightRequest="50"
+                            WidthRequest="40"
+                            Aspect="AspectFit"
+                            Grid.Column="6"
+                            Margin="250,40,110,0"
+                            AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
+                            AbsoluteLayout.LayoutFlags="None"/>
+
+                        <Image 
+                            Source="user_img_semfundo.png" 
+                            HeightRequest="50"
+                            WidthRequest="30"
+                            Aspect="AspectFit"
+                            Grid.Column="5"
+                            Grid.Row="1"
+                            Grid.RowSpan="4"
+                            Margin="130,0,0,10"
+                            AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
+                            AbsoluteLayout.LayoutFlags="None"/>
+
+                        <Image 
+                            Source="img_salvar_semfundo.png" 
+                            HeightRequest="50"
+                            WidthRequest="30"
+                            Aspect="AspectFit"
+                            Grid.Column="5"
+                            Grid.Row="2"
+                            Grid.RowSpan="4"
+                            Margin="130,50,0,10"
+                            AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
+                            AbsoluteLayout.LayoutFlags="None"/>
+
+                        <Label 
+                            Text="CPF:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" 
+                            WidthRequest="150" 
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Margin="10,40,0,0"/>
+                        <Entry
+                            Placeholder="CPF"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="200" 
+                            HeightRequest="20"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Margin="70,20,0,0"/>
+
+                        <Label 
+                            Text="NOME DE USUÁRIO:"
+                            FontAttributes="Bold"
+                            TextColor="Black"
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" 
+                            WidthRequest="150" 
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Margin="100,50,0,0"/>
+                        <Entry
+                            Placeholder="NOME DE USUÁRIO"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="200" 
+                            HeightRequest="20"
+                            Grid.Column="0"
+                            Grid.Row="4"
+                            Margin="70,10,0,0"/>
+
+                        <Label 
+                            Text="SENHA:" 
+                            FontAttributes="Bold"
+                            TextColor="Black"
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" 
+                            WidthRequest="150" 
+                            Grid.Column="3"
+                            Grid.ColumnSpan="4"
+                            Grid.Row="3"
+                            Margin="130,40,0,0"/>
+                        <Entry
+                            Placeholder="SENHA"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="200" 
+                            HeightRequest="20"
+                            Grid.Column="3"
+                            Grid.ColumnSpan="4"
+                            Grid.Row="4"
+                            Margin="70,10,0,0"/>
+
+
+                    </Grid>
+
+                </StackLayout>
+            </ContentView>
+
             <!-- Página de Vendas -->
             <ContentView 
                 x:Name="VendasPage"
                 BackgroundColor="#F8F8FF"
+                Margin="25,0,0,0"
                 IsVisible="False"
-                AbsoluteLayout.LayoutBounds="250, 0, 1, 1"
-                AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional">
+                AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"
+                AbsoluteLayout.LayoutFlags="None">
 
                 
                 <!-- Conteúdo da página de vendas -->
@@ -698,13 +992,7 @@
                                     HorizontalOptions="Start"
                                     Margin="325,0,0,0">
                             </StackLayout>
-
-
-
                         </Grid>
-
-
-                       
 
                     </StackLayout>
 

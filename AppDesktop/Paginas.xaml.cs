@@ -1,5 +1,5 @@
 using Microsoft.Maui.Controls;
-using Microsoft.Maui.Graphics; // Certifique-se de que este namespace está incluído
+using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Layouts;
 using System;
 
@@ -8,14 +8,18 @@ namespace AppDesktop {
         public Paginas() {
             InitializeComponent();
             paymentMethodPicker.SelectedIndexChanged += PaymentMethodPicker_SelectedIndexChanged;
+            this.SizeChanged += OnPageSizeChanged;
         }
 
-        private void OnHomeButtonClicked(object sender, EventArgs e) {
-            // Lógica para o botão inicial
-        }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e) {
+        private void Botao_Configuracao(object sender, EventArgs e) {
             // Lógica para o botão de configuração
+            ShowconfiguracaoPage();
+        }
+
+        private void Button_Cadastrar_Usuario(object sender, EventArgs e) {
+            ShowCadastrar_Usuario();
+
         }
 
         private void Botao_cadastro_clicavel(object sender, EventArgs e) {
@@ -38,6 +42,20 @@ namespace AppDesktop {
         private void ShowVendasPage() {
             VendasPage.IsVisible = true;
             // Define o layout do MainContent para não cobrir a página de vendas
+            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
+            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
+        }
+
+        private void ShowconfiguracaoPage() {
+            configuracaoPage.IsVisible = true;
+
+            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
+            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
+        }
+
+        private void ShowCadastrar_Usuario() {
+            Pagina_Cadastrar_Usuario.IsVisible = true;
+
             AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
             AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
         }
@@ -71,60 +89,48 @@ namespace AppDesktop {
             string DescontoDigitado = DescontoEntry.Text;
             string ValorTotalDigitado = ValorToTalEntry.Text;
 
-
             // Cria uma nova linha para o produto dentro de um Frame
             var productLayout = new StackLayout {
                 Orientation = StackOrientation.Horizontal,
-                Children =
-                {
+                Children = {
                     new Label { Text = produtoDigitado, WidthRequest = 100 },
-                    
                 }
             };
 
             var QuantidadeLayout = new StackLayout {
                 Orientation = StackOrientation.Horizontal,
-                Children =
-               {
+                Children = {
                     new Label { Text = QuantidadeDigitado, WidthRequest = 100 },
-
                 }
             };
 
             var PrecoUnLayout = new StackLayout {
                 Orientation = StackOrientation.Horizontal,
-                Children =
-               {
-                    new Label { Text =PrecounDigitado, WidthRequest = 100 },
-
+                Children = {
+                    new Label { Text = PrecounDigitado, WidthRequest = 100 },
                 }
             };
 
             var DescontoLayout = new StackLayout {
                 Orientation = StackOrientation.Horizontal,
-                Children =
-               {
+                Children = {
                     new Label { Text = DescontoDigitado, WidthRequest = 100 },
-
                 }
             };
 
             var ValorTotalLayout = new StackLayout {
                 Orientation = StackOrientation.Horizontal,
-                Children =
-               {
+                Children = {
                     new Label { Text = ValorTotalDigitado, WidthRequest = 100 },
-
                 }
             };
-
 
             var productFrame = new Frame {
                 Content = productLayout,
                 BackgroundColor = Colors.White,
                 BorderColor = Colors.Gainsboro,
                 CornerRadius = 0,
-                Padding = new Thickness(5,2),
+                Padding = new Thickness(5, 2),
                 Margin = new Thickness(0, 0)
             };
 
@@ -164,18 +170,38 @@ namespace AppDesktop {
                 Margin = new Thickness(0, 0)
             };
 
-
             // Adiciona o produto ao StackLayout
             ProductStackLayout.Children.Add(productFrame);
             LinhaQuantidade.Children.Add(QuantidadeFrame);
             LinhaPrecoUn.Children.Add(PrecoUnFrame);
             LinhaDesconto.Children.Add(DescontoFrame);
             LinhaValorTotal.Children.Add(valorTotalFrame);
-
-
-
-
         }
+
+        private void OnPageSizeChanged(object sender, EventArgs e) {
+            double width = this.Width;
+            double height = this.Height;
+
+            // Defina os tamanhos desejados para a tela menor
+            double desiredWidth = 1100;
+            double desiredHeight = 650;
+
+            // Calcule os novos tamanhos baseados na proporção da tela maior
+            double newWidth = width > desiredWidth ? width * 0.8 : desiredWidth;
+            double newHeight = height > desiredHeight ? height * 0.9 : desiredHeight;
+
+            // Ajuste os tamanhos e posicionamento do ContentView
+            AdjustContentViewLayout(VendasPage, newWidth, newHeight);
+            AdjustContentViewLayout(configuracaoPage, newWidth, newHeight);
+            AdjustContentViewLayout(Pagina_Cadastrar_Usuario, newWidth, newHeight);
+        }
+
+        private void AdjustContentViewLayout(View contentView, double width, double height) {
+            AbsoluteLayout.SetLayoutBounds(contentView, new Rect(0.9, 0.5, width, height));
+            AbsoluteLayout.SetLayoutFlags(contentView, AbsoluteLayoutFlags.PositionProportional);
+           
+        }
+
+        
     }
 }
-

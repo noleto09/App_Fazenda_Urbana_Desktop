@@ -5,7 +5,9 @@ img_cadastrar_cliente.scale-100.png
 img_configuracao.scale-100.png
 img_home.scale-100.png
 img_login.scale-100.jpg
+img_lupa.scale-100.png
 img_relatorio.scale-100.png
+img_salvar_semfundo.scale-100.png
 img_vendas.scale-100.png
 isumos_sem_fundo.scale-100.png
 logo_agrotech.scale-100.png
@@ -55,6 +57,7 @@ logo_grandeWideTile.scale-125.png
 logo_grandeWideTile.scale-150.png
 logo_grandeWideTile.scale-200.png
 logo_grandeWideTile.scale-400.png
+user_img_semfundo.scale-100.png
 logo_s_fundoSplashScreen.scale-100.png
 logo_s_fundoSplashScreen.scale-125.png
 logo_s_fundoSplashScreen.scale-150.png

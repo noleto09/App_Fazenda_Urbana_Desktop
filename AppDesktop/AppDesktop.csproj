@@ -62,10 +62,13 @@
 	  <None Remove="Resources\Images\img_configuracao.png" />
 	  <None Remove="Resources\Images\img_home.png" />
 	  <None Remove="Resources\Images\img_login.jpg" />
+	  <None Remove="Resources\Images\img_lupa.png" />
 	  <None Remove="Resources\Images\img_relatorio.png" />
+	  <None Remove="Resources\Images\img_salvar_semfundo.png" />
 	  <None Remove="Resources\Images\img_vendas.png" />
 	  <None Remove="Resources\Images\isumos_sem_fundo.png" />
 	  <None Remove="Resources\Images\logo_agrotech.png" />
+	  <None Remove="Resources\Images\user_img_semfundo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
