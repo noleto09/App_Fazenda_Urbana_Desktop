@@ -229,7 +229,7 @@
                     
                 </ScrollView>
                 
-                
+                <!-- Página cadastro de usuário-->
             </ContentView>
 
             <ContentView x:Name="Pagina_Cadastrar_Usuario" BackgroundColor="White" Margin="25,0,0,0"
@@ -432,6 +432,384 @@
                     </Grid>
 
                 </StackLayout>
+            </ContentView>
+
+            <ContentView x:Name="Pagina_Cadastrar_Cliente" BackgroundColor="#F5F5F5" Margin="25,0,0,0"
+                IsVisible="False" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="None">
+                <StackLayout>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                    <Label 
+                        Text="Cadastrar Cliente" 
+                        FontSize="20" 
+                        FontAttributes="Bold" 
+                        TextColor="Black" 
+                        Margin="5,0,0,0"
+                        VerticalOptions="Fill"
+                        HorizontalOptions="Start" 
+                        Grid.Row="0" 
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6" />
+
+                    <Label 
+                        Text="ID:" 
+                        FontSize="15" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start" 
+                        WidthRequest="150" 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Margin="10,70,0,0"/>
+                    <Entry
+                        Placeholder="ID"
+                        HorizontalOptions="StartAndExpand" 
+                        WidthRequest="100" 
+                        HeightRequest="0"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Grid.RowSpan="0"
+                        Margin="40,0,0,10"/>
+
+                        <RadioButton 
+                            Value="PF" 
+                            Margin="100,10,0,0"
+                            Grid.Column="0"
+                            Grid.Row="1">
+                            
+                            <RadioButton.Content>
+                                <StackLayout>
+                                    <Label
+                                        Text="PF"/>
+                                </StackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+
+                        <RadioButton 
+                            Value="PJ" 
+                            Margin="20,10,0,0"
+                            Grid.Column="0"
+                            Grid.Row="1">
+
+                            <RadioButton.Content>
+                                <StackLayout>
+                                    <Label
+                                        Text="PJ"/>
+                                </StackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+
+                        <Label 
+                            Text="Nome:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" 
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Grid.RowSpan="2"
+                            Margin="10,25,0,0"/>
+                        <Entry
+                            Placeholder="NOME"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="250" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Grid.RowSpan="2"
+                            Margin="90,0,0,0"/>
+
+                        <Label 
+                            Text="CPF/CNPJ:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Margin="10,70,0,0"/>
+                        <Entry
+                            Placeholder="CPF/CPNJ"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="200" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Margin="90,45,0,0"/>
+                        
+                        <Label 
+                            Text="RG:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Margin="10,0,0,25"/>
+                        <Entry
+                            Placeholder="RG"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="150" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Margin="90,0,0,50"/>
+
+                        <Label 
+                            Text="Data de &#10;Nascimento:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Margin="10,60,0,0"/>
+                        <Entry
+                            Placeholder="DATA DE NASCIMENTO"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="170" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Margin="110,50,0,0"/>
+
+
+                        <Label
+                            Text="Sexo:"
+                            Grid.Column="0"
+                            Grid.Row="4"
+                            Margin="10,20,0,0"/>
+
+                        <RadioButton 
+                            Value="MC" 
+                            Margin="100,10,0,0"
+                            Grid.Column="0"
+                            Grid.Row="4">
+
+                            <RadioButton.Content>
+                                <StackLayout>
+                                    <Label
+                                        Text="MASCULINO:"/>
+                                </StackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+
+                        <RadioButton 
+                            Value="FM" 
+                            Margin="250,10,0,0"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="3"
+                            Grid.Row="4">
+
+                            <RadioButton.Content>
+                                <StackLayout>
+                                    <Label
+                                        Text="FEMININO:"/>
+                                </StackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+
+                        <RadioButton 
+                            Value="OT" 
+                            Margin="50,10,0,0"
+                            Grid.Column="1"
+                            Grid.Row="4">
+
+                            <RadioButton.Content>
+                                <StackLayout>
+                                    <Label
+                                        Text="OUTROS:"/>
+                                </StackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+
+                        <Label 
+                            Text="Rua:" 
+                            FontSize="15"   
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="5"
+                            Margin="10,0,0,25"/>
+                        <Entry
+                            Placeholder="RUA"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="150" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="5"
+                            Margin="90,0,0,50"/>
+
+                        <Label 
+                            Text="N°:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="1"
+                            Grid.ColumnSpan="0"
+                            Grid.Row="5"
+                            Margin="10,0,0,25"/>
+                        <Entry
+                            Placeholder="N°"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="100" 
+                            HeightRequest="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Grid.Row="5"
+                            Margin="45,0,0,50"/>
+
+                        <RadioButton 
+                            Value="OT" 
+                            Margin="0,0,90,20"
+                            Grid.Column="3"
+                            Grid.Row="5">
+
+                            <RadioButton.Content>
+                                <StackLayout>
+                                    <Label
+                                        Text="S/N"/>
+                                </StackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+
+                        <Label 
+                            Text="Complementar:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="5"
+                            Margin="10,75,0,0"/>
+                        <Entry
+                            Placeholder="COMPLEMENTAR"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="200" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="5"
+                            Margin="130,50,0,0"/>
+
+                        <Label 
+                            Text="CEP:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="1"
+                            Grid.Row="5"
+                            Margin="10,75,0,0"/>
+                        <Entry
+                            Placeholder="CEP"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="150" 
+                            HeightRequest="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="5"
+                            Grid.Row="5"
+                            Margin="50,50,0,0"/>
+
+                        <Label 
+                            Text="Bairro:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="6"
+                            Margin="10,0,0,50"/>
+                        <Entry
+                            Placeholder="BAIRRO" 
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="150" 
+                            HeightRequest="0"
+                            Grid.Column="0"
+                            Grid.Row="6"
+                            Grid.RowSpan="7"
+                            Margin="90,0,0,80"/>
+
+                        <Label 
+                            Text="Estado:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="0"
+                            Grid.Row="6"            
+                            Margin="280,0,0,50"/>
+                        <Entry
+                            Placeholder="ESTADO"
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="150" 
+                            HeightRequest="0"   
+                            Grid.Column="1"
+                            Grid.ColumnSpan="0"
+                            Grid.Row="6"
+                            Margin="0,0,0,80"/>
+
+
+                        <Label 
+                            Text="Cidade:" 
+                            FontSize="15" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start"  
+                            Grid.Column="2"
+                            Grid.ColumnSpan="5"
+                            Grid.Row="6"            
+                            Margin="30,0,0,50"/>
+                        <Entry
+                            Placeholder="CIDADE"    
+                            HorizontalOptions="StartAndExpand" 
+                            WidthRequest="150" 
+                            HeightRequest="0"   
+                            Grid.Column="2"
+                            Grid.ColumnSpan="5"
+                            Grid.Row="6"
+                            Margin="90,0,0,80"/>
+
+                       
+
+                        <Button
+                            Text="SALVAR"
+                            FontSize="19"
+                            BackgroundColor="#32CD32"
+                            WidthRequest="160"
+                            HeightRequest="50"
+                            Grid.Column="6"
+                            Grid.Row="6"
+                            Grid.RowSpan="7"
+                            Margin="0,50,0,0"
+                            Padding="10,10,0,10" />
+
+                        <Image 
+                            Source="img_salvar_semfundo.png" 
+                            HeightRequest="50"
+                            WidthRequest="35"
+                            Aspect="AspectFit"
+                            Grid.Column="2"
+                            Grid.ColumnSpan="5"
+                            Grid.Row="6"
+                            Margin="30,50,0,0"
+                            AbsoluteLayout.LayoutBounds="10, 10, 35, 35"
+                            AbsoluteLayout.LayoutFlags="None"/>
+
+                    </Grid>
+
+                </StackLayout>
+                
             </ContentView>
 
             <!-- Página de Vendas -->

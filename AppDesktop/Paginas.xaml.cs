@@ -24,6 +24,7 @@ namespace AppDesktop {
 
         private void Botao_cadastro_clicavel(object sender, EventArgs e) {
             // Lógica para o botão de cadastrar cliente
+            ShowCadastrar_Cliente();
         }
 
         private void Botao_Vendas_clicavel(object sender, EventArgs e) {
@@ -55,6 +56,13 @@ namespace AppDesktop {
 
         private void ShowCadastrar_Usuario() {
             Pagina_Cadastrar_Usuario.IsVisible = true;
+
+            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
+            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
+        }
+
+        private void ShowCadastrar_Cliente() {
+            Pagina_Cadastrar_Cliente.IsVisible = true;
 
             AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
             AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
@@ -194,6 +202,7 @@ namespace AppDesktop {
             AdjustContentViewLayout(VendasPage, newWidth, newHeight);
             AdjustContentViewLayout(configuracaoPage, newWidth, newHeight);
             AdjustContentViewLayout(Pagina_Cadastrar_Usuario, newWidth, newHeight);
+            AdjustContentViewLayout(Pagina_Cadastrar_Cliente, newWidth, newHeight);
         }
 
         private void AdjustContentViewLayout(View contentView, double width, double height) {

@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-22T23:37:28.741</Modified>
+      <Modified>2024-07-27T22:38:34.406</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppDesktop.dll">
       <PackagePath>AppDesktop.dll</PackagePath>
-      <Modified>2024-07-22T23:37:22.725</Modified>
+      <Modified>2024-07-27T22:38:30.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppDesktop.exe</PackagePath>
-      <Modified>2024-07-22T23:37:22.944</Modified>
+      <Modified>2024-07-27T22:38:31.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
