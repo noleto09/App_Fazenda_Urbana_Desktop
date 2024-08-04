@@ -1,10 +1,15 @@
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Layouts;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.X509;
 using System;
 
 namespace AppDesktop {
     public partial class Paginas : ContentPage {
+
+        private string selectedSexo;
+
         public Paginas() {
             InitializeComponent();
             paymentMethodPicker.SelectedIndexChanged += PaymentMethodPicker_SelectedIndexChanged;
@@ -16,6 +21,32 @@ namespace AppDesktop {
             // Lógica para o botão de configuração
             ShowconfiguracaoPage();
         }
+
+        private async void Button_Salvar_Clicked(object sender, EventArgs e) {
+            // Obter os dados dos campos
+            string nome = nomeEntry.Text; // Ajuste os nomes dos Entry conforme sua implementação
+            string cpf = cpfEntry.Text;
+            string nomeUsuario = nomeUsuarioEntry.Text;
+            string senha = senhaEntry.Text;
+
+            // Criar uma instância da classe DataAccess
+            var dataAccess = new DataAccess();
+
+            // Inserir dados no banco de dados
+            bool success = await dataAccess.InserirUsuarioAsync(nome, cpf, nomeUsuario, senha);
+
+            if (success) {
+                await DisplayAlert("Sucesso", "Dados inseridos com sucesso.", "OK");
+                // Limpar os campos ou realizar outras ações conforme necessário
+                nomeEntry.Text = "";
+                cpfEntry.Text = "";
+                nomeUsuarioEntry.Text = "";
+                senhaEntry.Text = "";
+            } else {
+                await DisplayAlert("Erro", "Não foi possível inserir os dados. Por favor, tente novamente.", "OK");
+            }
+        }
+
 
         private void Button_Cadastrar_Usuario(object sender, EventArgs e) {
             ShowCadastrar_Usuario();
@@ -34,6 +65,7 @@ namespace AppDesktop {
 
         private void Botao_CadastarPI_clicavel(object sender, EventArgs e) {
             // Lógica para o botão de insumos e produtos
+            ShowInsumos_Produtos();
         }
 
         private void Botao_Relatorio_Clicavel(object sender, EventArgs e) {
@@ -68,6 +100,13 @@ namespace AppDesktop {
             AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
         }
 
+        private void ShowInsumos_Produtos() {
+            Insumos_Produtos.IsVisible = true;
+
+            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
+            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
+        }
+
         private void Botao_Informacoes_Cliente(object sender, EventArgs e) {
             // Lógica para o botão de informações do cliente
         }
@@ -97,94 +136,43 @@ namespace AppDesktop {
             string DescontoDigitado = DescontoEntry.Text;
             string ValorTotalDigitado = ValorToTalEntry.Text;
 
-            // Cria uma nova linha para o produto dentro de um Frame
-            var productLayout = new StackLayout {
-                Orientation = StackOrientation.Horizontal,
-                Children = {
-                    new Label { Text = produtoDigitado, WidthRequest = 100 },
-                }
-            };
+            // Função para criar um StackLayout com um Label dentro
+            StackLayout CriarStackLayout(string texto) {
+                return new StackLayout {
+                    Orientation = StackOrientation.Horizontal,
+                    Children = {
+                new Label { Text = texto, WidthRequest = 100 }
+            }
+                };
+            }
 
-            var QuantidadeLayout = new StackLayout {
-                Orientation = StackOrientation.Horizontal,
-                Children = {
-                    new Label { Text = QuantidadeDigitado, WidthRequest = 100 },
-                }
-            };
+            // Função para criar um Frame que contém um StackLayout
+            Frame CriarFrame(StackLayout layout) {
+                return new Frame {
+                    Content = layout,
+                    BackgroundColor = Colors.White,
+                    BorderColor = Colors.Gainsboro,
+                    CornerRadius = 0,
+                    Padding = new Thickness(5, 2),
+                    Margin = new Thickness(0, 0)
+                };
+            }
 
-            var PrecoUnLayout = new StackLayout {
-                Orientation = StackOrientation.Horizontal,
-                Children = {
-                    new Label { Text = PrecounDigitado, WidthRequest = 100 },
-                }
-            };
+            // Cria os layouts e frames
+            var productFrame = CriarFrame(CriarStackLayout(produtoDigitado));
+            var QuantidadeFrame = CriarFrame(CriarStackLayout(QuantidadeDigitado));
+            var PrecoUnFrame = CriarFrame(CriarStackLayout(PrecounDigitado));
+            var DescontoFrame = CriarFrame(CriarStackLayout(DescontoDigitado));
+            var ValorTotalFrame = CriarFrame(CriarStackLayout(ValorTotalDigitado));
 
-            var DescontoLayout = new StackLayout {
-                Orientation = StackOrientation.Horizontal,
-                Children = {
-                    new Label { Text = DescontoDigitado, WidthRequest = 100 },
-                }
-            };
-
-            var ValorTotalLayout = new StackLayout {
-                Orientation = StackOrientation.Horizontal,
-                Children = {
-                    new Label { Text = ValorTotalDigitado, WidthRequest = 100 },
-                }
-            };
-
-            var productFrame = new Frame {
-                Content = productLayout,
-                BackgroundColor = Colors.White,
-                BorderColor = Colors.Gainsboro,
-                CornerRadius = 0,
-                Padding = new Thickness(5, 2),
-                Margin = new Thickness(0, 0)
-            };
-
-            var QuantidadeFrame = new Frame {
-                Content = QuantidadeLayout,
-                BackgroundColor = Colors.White,
-                BorderColor = Colors.Gainsboro,
-                CornerRadius = 0,
-                Padding = new Thickness(5, 2),
-                Margin = new Thickness(0, 0)
-            };
-
-            var PrecoUnFrame = new Frame {
-                Content = PrecoUnLayout,
-                BackgroundColor = Colors.White,
-                BorderColor = Colors.Gainsboro,
-                CornerRadius = 0,
-                Padding = new Thickness(5, 2),
-                Margin = new Thickness(0, 0)
-            };
-
-            var DescontoFrame = new Frame {
-                Content = DescontoLayout,
-                BackgroundColor = Colors.White,
-                BorderColor = Colors.Gainsboro,
-                CornerRadius = 0,
-                Padding = new Thickness(5, 2),
-                Margin = new Thickness(0, 0)
-            };
-
-            var valorTotalFrame = new Frame {
-                Content = ValorTotalLayout,
-                BackgroundColor = Colors.White,
-                BorderColor = Colors.Gainsboro,
-                CornerRadius = 0,
-                Padding = new Thickness(5, 2),
-                Margin = new Thickness(0, 0)
-            };
-
-            // Adiciona o produto ao StackLayout
+            // Adiciona os frames aos StackLayouts apropriados
             ProductStackLayout.Children.Add(productFrame);
             LinhaQuantidade.Children.Add(QuantidadeFrame);
             LinhaPrecoUn.Children.Add(PrecoUnFrame);
             LinhaDesconto.Children.Add(DescontoFrame);
-            LinhaValorTotal.Children.Add(valorTotalFrame);
+            LinhaValorTotal.Children.Add(ValorTotalFrame);
         }
+
 
         private void OnPageSizeChanged(object sender, EventArgs e) {
             double width = this.Width;
@@ -203,6 +191,7 @@ namespace AppDesktop {
             AdjustContentViewLayout(configuracaoPage, newWidth, newHeight);
             AdjustContentViewLayout(Pagina_Cadastrar_Usuario, newWidth, newHeight);
             AdjustContentViewLayout(Pagina_Cadastrar_Cliente, newWidth, newHeight);
+            AdjustContentViewLayout(Insumos_Produtos, newWidth, newHeight);
         }
 
         private void AdjustContentViewLayout(View contentView, double width, double height) {
@@ -211,6 +200,62 @@ namespace AppDesktop {
            
         }
 
-        
+        private void Button_Salvar_Cliente(object sender, EventArgs e) {
+            
+        }
+
+        private void OnClientTypeChanged(object sender, CheckedChangedEventArgs e) {
+            if (RadioButtonPF.IsChecked) {
+                // Se PF estiver selecionado, habilita os CheckBox para sexo
+                CheckBoxMale.IsEnabled = true;
+                CheckBoxFemale.IsEnabled = true;
+                CheckBoxOtherSex.IsEnabled = true;
+            } else if (RadioButtonPJ.IsChecked) {
+                // Se PJ estiver selecionado, desabilita os CheckBox para sexo
+                CheckBoxMale.IsEnabled = false;
+                CheckBoxFemale.IsEnabled = false;
+                CheckBoxOtherSex.IsEnabled = false;
+
+                // Desmarca todos os CheckBox para evitar seleção acidental
+                CheckBoxMale.IsChecked = false;
+                CheckBoxFemale.IsChecked = false;
+                CheckBoxOtherSex.IsChecked = false;
+            }
+        }
+
+        private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e) {
+            if (RadioButtonPF.IsChecked) {
+                if (sender is CheckBox selectedCheckBox && selectedCheckBox.IsChecked) {
+                    // Desmarcar todos os outros CheckBox
+                    foreach (var checkbox in new[] { CheckBoxMale, CheckBoxFemale, CheckBoxOtherSex }) {
+                        if (checkbox != selectedCheckBox) {
+                            checkbox.IsChecked = false;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+        private void OnAddressTypeChanged(object sender, CheckedChangedEventArgs e) {
+           
+        }
+
+        private void CheckBoxMale_CheckedChanged(object sender, CheckedChangedEventArgs e) {
+
+        }
+
+        private void CheckBoxFemale_CheckedChanged(object sender, CheckedChangedEventArgs e) {
+
+        }
+
+        private void CheckBoxOtherSex_CheckedChanged(object sender, CheckedChangedEventArgs e) {
+
+        }
     }
 }
+    
+

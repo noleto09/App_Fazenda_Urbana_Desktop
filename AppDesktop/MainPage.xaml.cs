@@ -1,8 +1,11 @@
 ﻿using Microsoft.Maui.Controls;
+using System;
+using System.Threading.Tasks;
 
 namespace AppDesktop {
     public partial class MainPage : ContentPage {
         private bool isPasswordVisible = false;
+        private DataAccess dataAccess = new DataAccess();
 
         public MainPage() {
             InitializeComponent();
@@ -19,7 +22,16 @@ namespace AppDesktop {
         }
 
         private async void Login_Clicked_1(object sender, EventArgs e) {
-            await Navigation.PushAsync(new Paginas());
+            string username = Username.Text;
+            string password = Password.Text;
+
+            bool isValidUser = await dataAccess.VerificarUsuarioAsync(username, password);
+
+            if (isValidUser) {
+                await Navigation.PushAsync(new Paginas());
+            } else {
+                await DisplayAlert("Erro de Login", "Usuário não cadastrado, usuário ou senha incorreta", "OK");
+            }
         }
     }
 }
