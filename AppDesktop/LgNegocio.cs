@@ -27,17 +27,18 @@ public class DataAccess {
         }
     }
 
-    public async Task<bool> InserirClienteAsync(string nome, string cpf, string nomeUsuario, string senha) {
+    public async Task<bool> InserirClienteAsync(string cl_nome, string cl_cpf_cnpj, string cl_rg, string cl_data_nascimento, string genero) {
         try {
             using (var conn = new MySqlConnection(connStr)) {
                 await conn.OpenAsync();
 
-                string sql = "INSERT INTO cadastro_usuario (nome, cpf, nome_usuario, senha_usuario) VALUES (@nome, @cpf, @nome_usuario, @senha)";
+                string sql = "INSERT INTO cliente (nome, cpf_cnpj, rg, data_nascimento, genero) VALUES (@nome, @cpf_cnpj, @rg, @data_nascimento, @genero)";
                 using (var cmd = new MySqlCommand(sql, conn)) {
-                    cmd.Parameters.AddWithValue("@nome", nome);
-                    cmd.Parameters.AddWithValue("@cpf", cpf);
-                    cmd.Parameters.AddWithValue("@nome_usuario", nomeUsuario);
-                    cmd.Parameters.AddWithValue("@senha", senha);
+                    cmd.Parameters.AddWithValue("@nome", cl_nome);
+                    cmd.Parameters.AddWithValue("@cpf_cnpj", cl_cpf_cnpj);
+                    cmd.Parameters.AddWithValue("@rg", cl_rg);
+                    cmd.Parameters.AddWithValue("@data_nascimento", cl_data_nascimento);
+                    cmd.Parameters.AddWithValue("@genero", genero);  // Passar o gênero
 
                     await cmd.ExecuteNonQueryAsync();
                 }
@@ -49,6 +50,9 @@ public class DataAccess {
             return false;
         }
     }
+
+
+
 
     public async Task<bool> VerificarUsuarioAsync(string nomeUsuario, string senha) {
         try {

@@ -4,6 +4,7 @@ using Microsoft.Maui.Layouts;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Asn1.X509;
 using System;
+using System.Text;
 
 namespace AppDesktop {
     public partial class Paginas : ContentPage {
@@ -17,11 +18,7 @@ namespace AppDesktop {
         }
 
 
-        private void Botao_Configuracao(object sender, EventArgs e) {
-            // Lógica para o botão de configuração
-            ShowconfiguracaoPage();
-        }
-
+      
         private async void Button_Salvar_Clicked(object sender, EventArgs e) {
             // Obter os dados dos campos
             string nome = nomeEntry.Text; // Ajuste os nomes dos Entry conforme sua implementação
@@ -48,64 +45,40 @@ namespace AppDesktop {
         }
 
 
-        private void Button_Cadastrar_Usuario(object sender, EventArgs e) {
-            ShowCadastrar_Usuario();
+        private readonly Ajuste_Paginas ajustePaginas = new Ajuste_Paginas();
 
+        private void Button_Cadastrar_Usuario(object sender, EventArgs e) {
+            // Garante que a página de configuração esteja visível antes de exibir a de cadastro de usuário
+            ShowconfiguracaoPage();
+            ajustePaginas.MostrarPagina(Pagina_Cadastrar_Usuario, MainContent);
         }
 
         private void Botao_cadastro_clicavel(object sender, EventArgs e) {
-            // Lógica para o botão de cadastrar cliente
-            ShowCadastrar_Cliente();
+            ajustePaginas.MostrarPagina(Pagina_Cadastrar_Cliente, MainContent);
         }
 
         private void Botao_Vendas_clicavel(object sender, EventArgs e) {
-            // Lógica para o botão de vendas
-            ShowVendasPage();
+            ajustePaginas.MostrarPagina(VendasPage, MainContent);
         }
 
         private void Botao_CadastarPI_clicavel(object sender, EventArgs e) {
-            // Lógica para o botão de insumos e produtos
-            ShowInsumos_Produtos();
+            ajustePaginas.MostrarPagina(Insumos_Produtos, MainContent);
         }
 
         private void Botao_Relatorio_Clicavel(object sender, EventArgs e) {
-            // Lógica para o botão de relatórios
+           
         }
 
-        private void ShowVendasPage() {
-            VendasPage.IsVisible = true;
-            // Define o layout do MainContent para não cobrir a página de vendas
-            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
-            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
+        private void Botao_Configuracao(object sender, EventArgs e) {
+            // Exibe a página de configuração
+            ShowconfiguracaoPage();
         }
 
         private void ShowconfiguracaoPage() {
-            configuracaoPage.IsVisible = true;
-
-            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
-            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
+            // Exibe a página de configuração
+            ajustePaginas.MostrarPagina(configuracaoPage, MainContent);
         }
 
-        private void ShowCadastrar_Usuario() {
-            Pagina_Cadastrar_Usuario.IsVisible = true;
-
-            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
-            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
-        }
-
-        private void ShowCadastrar_Cliente() {
-            Pagina_Cadastrar_Cliente.IsVisible = true;
-
-            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
-            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
-        }
-
-        private void ShowInsumos_Produtos() {
-            Insumos_Produtos.IsVisible = true;
-
-            AbsoluteLayout.SetLayoutBounds(MainContent, new Rect(250, 0, 1, 1));
-            AbsoluteLayout.SetLayoutFlags(MainContent, AbsoluteLayoutFlags.HeightProportional | AbsoluteLayoutFlags.WidthProportional);
-        }
 
         private void Botao_Informacoes_Cliente(object sender, EventArgs e) {
             // Lógica para o botão de informações do cliente
@@ -121,57 +94,22 @@ namespace AppDesktop {
             }
         }
 
-        private void Button_Nova_venda(object sender, EventArgs e) {
-            // Habilita os campos de texto
-            DescontoEntry.IsEnabled = true;
-            ClienteEntry.IsEnabled = true;
-            ProdutoEntry.IsEnabled = true;
-            QuantidadeEntry.IsEnabled = true;
-        }
+
+
+        private readonly FramesPaginaVendas framesPaginaVendas = new FramesPaginaVendas();
 
         private void Button_Confirmacao(object sender, EventArgs e) {
             string produtoDigitado = ProdutoEntry.Text;
-            string QuantidadeDigitado = QuantidadeEntry.Text;
-            string PrecounDigitado = Preco_UnitarioEntry.Text;
-            string DescontoDigitado = DescontoEntry.Text;
-            string ValorTotalDigitado = ValorToTalEntry.Text;
+            string quantidadeDigitado = QuantidadeEntry.Text;
+            string precoUnDigitado = Preco_UnitarioEntry.Text;
+            string descontoDigitado = DescontoEntry.Text;
+            string valorTotalDigitado = ValorToTalEntry.Text;
 
-            // Função para criar um StackLayout com um Label dentro
-            StackLayout CriarStackLayout(string texto) {
-                return new StackLayout {
-                    Orientation = StackOrientation.Horizontal,
-                    Children = {
-                new Label { Text = texto, WidthRequest = 100 }
-            }
-                };
-            }
-
-            // Função para criar um Frame que contém um StackLayout
-            Frame CriarFrame(StackLayout layout) {
-                return new Frame {
-                    Content = layout,
-                    BackgroundColor = Colors.White,
-                    BorderColor = Colors.Gainsboro,
-                    CornerRadius = 0,
-                    Padding = new Thickness(5, 2),
-                    Margin = new Thickness(0, 0)
-                };
-            }
-
-            // Cria os layouts e frames
-            var productFrame = CriarFrame(CriarStackLayout(produtoDigitado));
-            var QuantidadeFrame = CriarFrame(CriarStackLayout(QuantidadeDigitado));
-            var PrecoUnFrame = CriarFrame(CriarStackLayout(PrecounDigitado));
-            var DescontoFrame = CriarFrame(CriarStackLayout(DescontoDigitado));
-            var ValorTotalFrame = CriarFrame(CriarStackLayout(ValorTotalDigitado));
-
-            // Adiciona os frames aos StackLayouts apropriados
-            ProductStackLayout.Children.Add(productFrame);
-            LinhaQuantidade.Children.Add(QuantidadeFrame);
-            LinhaPrecoUn.Children.Add(PrecoUnFrame);
-            LinhaDesconto.Children.Add(DescontoFrame);
-            LinhaValorTotal.Children.Add(ValorTotalFrame);
+            framesPaginaVendas.AdicionarFramesPaginaVendas(
+                ProductStackLayout, LinhaQuantidade, LinhaPrecoUn, LinhaDesconto, LinhaValorTotal,
+                produtoDigitado, quantidadeDigitado, precoUnDigitado, descontoDigitado, valorTotalDigitado);
         }
+
 
 
         private void OnPageSizeChanged(object sender, EventArgs e) {
@@ -192,36 +130,16 @@ namespace AppDesktop {
             AdjustContentViewLayout(Pagina_Cadastrar_Usuario, newWidth, newHeight);
             AdjustContentViewLayout(Pagina_Cadastrar_Cliente, newWidth, newHeight);
             AdjustContentViewLayout(Insumos_Produtos, newWidth, newHeight);
+            AdjustContentViewLayout(LogoAgrotech, newWidth, newHeight);
         }
 
         private void AdjustContentViewLayout(View contentView, double width, double height) {
             AbsoluteLayout.SetLayoutBounds(contentView, new Rect(0.9, 0.5, width, height));
             AbsoluteLayout.SetLayoutFlags(contentView, AbsoluteLayoutFlags.PositionProportional);
-           
+
         }
 
-        private void Button_Salvar_Cliente(object sender, EventArgs e) {
-            
-        }
-
-        private void OnClientTypeChanged(object sender, CheckedChangedEventArgs e) {
-            if (RadioButtonPF.IsChecked) {
-                // Se PF estiver selecionado, habilita os CheckBox para sexo
-                CheckBoxMale.IsEnabled = true;
-                CheckBoxFemale.IsEnabled = true;
-                CheckBoxOtherSex.IsEnabled = true;
-            } else if (RadioButtonPJ.IsChecked) {
-                // Se PJ estiver selecionado, desabilita os CheckBox para sexo
-                CheckBoxMale.IsEnabled = false;
-                CheckBoxFemale.IsEnabled = false;
-                CheckBoxOtherSex.IsEnabled = false;
-
-                // Desmarca todos os CheckBox para evitar seleção acidental
-                CheckBoxMale.IsChecked = false;
-                CheckBoxFemale.IsChecked = false;
-                CheckBoxOtherSex.IsChecked = false;
-            }
-        }
+        private string selectedGender;
 
         private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e) {
             if (RadioButtonPF.IsChecked) {
@@ -232,16 +150,119 @@ namespace AppDesktop {
                             checkbox.IsChecked = false;
                         }
                     }
+
+                    // Armazenar a escolha do usuário
+                    if (selectedCheckBox == CheckBoxMale) {
+                        selectedGender = "Masculino";
+                    } else if (selectedCheckBox == CheckBoxFemale) {
+                        selectedGender = "Feminino";
+                    } else if (selectedCheckBox == CheckBoxOtherSex) {
+                        selectedGender = "Outros";
+                    }
                 }
             }
         }
 
+        private readonly GerenciadorCamposFormulario gerenciadorCampos = new GerenciadorCamposFormulario();
 
+        private void Button_Nova_venda(object sender, EventArgs e) {
+            gerenciadorCampos.HabilitarCamposVenda(DescontoEntry, ClienteEntry, ProdutoEntry, QuantidadeEntry);
+        }
+
+        private void Button_Novo_Cliente(object sender, EventArgs e) {
+            gerenciadorCampos.HabilitarCamposCliente(
+                idEntry, Cl_nome_Entry, CpfCnpjEntry, Cl_Rg_Entry, Cl_dn_Entry,
+                RuaEntry, NumeroEntry, ComplementarEntry, CepEntry,
+                BairroEntry, EstadoEntry, CidadeEntry,
+                RadioButtonPF, RadioButtonPJ);
+        }
+
+
+        private async void Button_Salvar_Cliente(object sender, EventArgs e) {
+
+            idEntry.IsEnabled = false;
+            Cl_nome_Entry.IsEnabled = false;
+            CpfCnpjEntry.IsEnabled = false;
+            Cl_Rg_Entry.IsEnabled = false;
+            Cl_dn_Entry.IsEnabled = false;
+            RuaEntry.IsEnabled = false;
+            NumeroEntry.IsEnabled = false;
+            ComplementarEntry.IsEnabled = false;
+            CepEntry.IsEnabled = false;
+            BairroEntry.IsEnabled = false;
+            EstadoEntry.IsEnabled = false;
+            CidadeEntry.IsEnabled = false;
+            RadioButtonPF.IsEnabled = false;
+            RadioButtonPJ.IsEnabled = false;
+
+
+            // Obter os dados dos campos
+            string cl_nome = Cl_nome_Entry.Text;
+            string cl_cpf_cnpj = CpfCnpjEntry.Text;
+            string cl_rg = Cl_Rg_Entry.Text;
+            string cl_data_nascimento = Cl_dn_Entry.Text;
+
+            // Obter o gênero selecionado
+            string genero = selectedGender;
+
+            // Criar uma instância da classe DataAccess
+            var dataAccess = new DataAccess();
+
+            // Inserir dados no banco de dados, incluindo o gênero
+            bool success = await dataAccess.InserirClienteAsync(cl_nome, cl_cpf_cnpj, cl_rg, cl_data_nascimento, genero);
+
+            if (success) {
+                await DisplayAlert("Sucesso", "Dados inseridos com sucesso.", "OK");
+                // Limpar os campos
+                Cl_nome_Entry.Text = "";
+                CpfCnpjEntry.Text = "";
+                Cl_Rg_Entry.Text = "";
+                Cl_dn_Entry.Text = "";
+
+            } else {
+                await DisplayAlert("Erro", "Não foi possível inserir os dados. Por favor, tente novamente.", "OK");
+            }
+        }
+
+
+        // Contém a  lógica da classe Gereciador Tipo Cliente ou seja o sexo do cliente pessoa física
+        private readonly GerenciadorTipoCliente gerenciadorTipoCliente = new GerenciadorTipoCliente();
+
+        private void OnClientTypeChanged(object sender, CheckedChangedEventArgs e) {
+            gerenciadorTipoCliente.OnClientTypeChanged(RadioButtonPF, RadioButtonPJ, CpfCnpjEntry, CheckBoxMale, CheckBoxFemale, CheckBoxOtherSex);
+        }
+
+        // Contém a lógica da Classe Lg_Formatacao_cpnf_cpf
+        private Lg_Formatacao_cpnf_cpf formatador = new Lg_Formatacao_cpnf_cpf();
+
+        private void CpfCnpjEntry_TextChanged(object sender, TextChangedEventArgs e) {
+            var entry = sender as Entry;
+
+            if (entry == null) return;
+
+            string formattedText = string.Empty;
+
+            if (RadioButtonPF.IsChecked) {
+                // Formata como CPF
+                formattedText = formatador.FormatarCpf(e.NewTextValue);
+            } else if (RadioButtonPJ.IsChecked) {
+                // Formata como CNPJ
+                formattedText = formatador.FormatarCnpj(e.NewTextValue);
+            }
+
+            // Define o texto formatado
+            if (entry.Text != formattedText) {
+                entry.Text = formattedText;
+            }
+
+            // Move o cursor para o final do texto
+            entry.CursorPosition = entry.Text.Length;
+        }
 
 
 
         private void OnAddressTypeChanged(object sender, CheckedChangedEventArgs e) {
-           
+
         }
 
         private void CheckBoxMale_CheckedChanged(object sender, CheckedChangedEventArgs e) {
@@ -255,7 +276,9 @@ namespace AppDesktop {
         private void CheckBoxOtherSex_CheckedChanged(object sender, CheckedChangedEventArgs e) {
 
         }
+
+
     }
 }
-    
+
 

@@ -131,6 +131,12 @@
                 AbsoluteLayout.LayoutFlags="HeightProportional, WidthProportional">
             </StackLayout>
 
+            <Image 
+                x:Name="LogoAgrotech"
+                Source="logo_agrotech.png"
+                HeightRequest="350"
+               Margin="1000,400,0,0"/>
+
             <!-- Botão Home sempre visível no canto -->
             <Image 
                 Source="img_home.png" 
@@ -323,18 +329,18 @@
                             Padding="0,10,0,10" />
 
                         <Button
-    Text="SALVAR"
-    FontSize="19"
-    BackgroundColor="#32CD32"
-    WidthRequest="160"
-    HeightRequest="0"
-    Grid.Column="6"
-    Grid.ColumnSpan="6"
-    Grid.Row="2"
-    Grid.RowSpan="4"
-    Margin="250,50,0,10"
-    Padding="0,10,0,10"
-    Clicked="Button_Salvar_Clicked" />
+                            Text="SALVAR"
+                            FontSize="19"
+                            BackgroundColor="#32CD32"
+                            WidthRequest="160"
+                            HeightRequest="0"
+                            Grid.Column="6"
+                            Grid.ColumnSpan="6"
+                            Grid.Row="2"
+                            Grid.RowSpan="4"
+                            Margin="250,50,0,10"
+                            Padding="0,10,0,10"
+                            Clicked="Button_Salvar_Clicked" />
 
                         <Image 
                             Source="img_lupa.png" 
@@ -489,6 +495,7 @@
                         Margin="10,30,0,0"/>
                     <Entry
                         x:Name="idEntry"
+                         IsEnabled="False"
                         Placeholder="ID"
                         HorizontalOptions="StartAndExpand" 
                         WidthRequest="100" 
@@ -511,6 +518,7 @@
                             Margin="10,0,0,15"/>
                         <Entry
                             x:Name="Cl_nome_Entry"
+                            IsEnabled="False"
                             Placeholder="NOME"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="250" 
@@ -557,7 +565,8 @@
                             Grid.Row="0"
                             Grid.RowSpan="4"
                             Margin="0,100,0,0"
-                            Padding="0,10,0,10" />
+                            Padding="0,10,0,10" 
+                            Clicked="Button_Novo_Cliente"/>
 
                         <Image 
                             Source="user_img_semfundo.png" 
@@ -583,7 +592,7 @@
                             Grid.ColumnSpan="3"
                             Grid.Row="3"
                             Margin="0,0,0,25"
-                            Padding="0,10,0,10" />
+                            Padding="0,10,0,10"/>
 
                         <Label 
                             Text="CPF/CNPJ:" 
@@ -595,7 +604,9 @@
                             Grid.RowSpan="3"
                             Margin="10,25,0,0"/>
                         <Entry
-                            x:Name="Cpf_Cnpj_Entry"
+                            x:Name="CpfCnpjEntry"
+                             IsEnabled="False"
+                            TextChanged="CpfCnpjEntry_TextChanged"
                             Placeholder="CPF/CPNJ"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="200" 
@@ -616,6 +627,7 @@
                             Margin="10,80,0,0"/>
                         <Entry
                             x:Name="Cl_Rg_Entry"
+                             IsEnabled="False"
                             Placeholder="RG"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="150" 
@@ -634,6 +646,7 @@
                             Margin="10,6,0,0"/>
                         <Entry
                             x:Name="Cl_dn_Entry"
+                             IsEnabled="False"
                             Placeholder="DATA DE NASCIMENTO"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="170" 
@@ -654,7 +667,9 @@
                             Grid.Row="5"
                             Margin="10,65,0,0"/>
                         <Entry
+                            x:Name="RuaEntry"
                             Placeholder="RUA"
+                            IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="150" 
                             HeightRequest="0"
@@ -672,7 +687,9 @@
                             Grid.Row="5"
                             Margin="10,65,0,0"/>
                         <Entry
+                            x:Name="NumeroEntry"
                             Placeholder="N°"
+                            IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="100" 
                             HeightRequest="0"
@@ -690,7 +707,9 @@
                             Grid.Row="6"
                             Margin="10,0,0,10"/>
                         <Entry
+                            x:Name="ComplementarEntry"
                             Placeholder="COMPLEMENTAR"
+                             IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="200" 
                             HeightRequest="0"
@@ -707,7 +726,9 @@
                             Grid.Row="6"
                             Margin="10,0,0,10"/>
                         <Entry
+                            x:Name="CepEntry"
                             Placeholder="CEP"
+                             IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="150" 
                             HeightRequest="0"
@@ -726,7 +747,9 @@
                             Grid.RowSpan="7"
                             Margin="10,0,0,0"/>
                         <Entry
+                            x:Name="BairroEntry"
                             Placeholder="BAIRRO" 
+                             IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="150" 
                             HeightRequest="0"
@@ -745,7 +768,9 @@
                             Grid.RowSpan="7"
                             Margin="280,0,0,0"/>
                         <Entry
+                            x:Name="EstadoEntry"
                             Placeholder="ESTADO"
+                             IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="150" 
                             HeightRequest="0"   
@@ -767,7 +792,9 @@
                             Grid.RowSpan="7"
                             Margin="30,0,0,0"/>
                         <Entry
-                            Placeholder="CIDADE"    
+                            x:Name="CidadeEntry"
+                            Placeholder="CIDADE" 
+                             IsEnabled="False"
                             HorizontalOptions="StartAndExpand" 
                             WidthRequest="150" 
                             HeightRequest="0"   
@@ -809,7 +836,8 @@
 
 
                         <RadioButton 
-                            x:Name="RadioButtonPF" 
+                            x:Name="RadioButtonPF"
+                             IsEnabled="False"
                             Value="PF" 
                             Margin="20,90,0,0"
                             Grid.Column="0"
@@ -826,6 +854,7 @@
 
                         <RadioButton 
                             x:Name="RadioButtonPJ" 
+                             IsEnabled="False"
                             Value="PJ" 
                             Margin="100,90,0,0"
                             Grid.Column="0"
@@ -890,6 +919,7 @@
                         <!-- RadioButton and Entry for Address Number -->
                         <RadioButton 
                                 x:Name="RadioButtonSN" 
+                             IsEnabled="False"
                                 Value="OT" 
                                 Margin="0,40,0,0"
                                 Grid.Column="2"
