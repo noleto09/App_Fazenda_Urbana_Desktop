@@ -1,5 +1,6 @@
 ﻿public class Lg_Formatacao_cpnf_cpf {
     public string FormatarCpf(string text) {
+        
         text = new string(text.Where(char.IsDigit).ToArray()); // Remove caracteres não numéricos
 
         if (text.Length > 11) text = text.Substring(0, 11); // Limita a 11 caracteres

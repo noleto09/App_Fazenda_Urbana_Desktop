@@ -7,15 +7,14 @@
     }
 
     public void HabilitarCamposCliente(
-        Entry idEntry, Entry clNomeEntry, Entry cpfCnpjEntry, Entry clRgEntry, Entry clDnEntry,
+       Entry clNomeEntry, Entry cpfCnpjEntry, 
         Entry ruaEntry, Entry numeroEntry, Entry complementarEntry, Entry cepEntry,
         Entry bairroEntry, Entry estadoEntry, Entry cidadeEntry,
         RadioButton radioButtonPF, RadioButton radioButtonPJ) {
-        idEntry.IsEnabled = true;
+        
         clNomeEntry.IsEnabled = true;
         cpfCnpjEntry.IsEnabled = true;
-        clRgEntry.IsEnabled = true;
-        clDnEntry.IsEnabled = true;
+        
         ruaEntry.IsEnabled = true;
         numeroEntry.IsEnabled = true;
         complementarEntry.IsEnabled = true;

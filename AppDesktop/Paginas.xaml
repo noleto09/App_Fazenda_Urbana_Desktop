@@ -495,7 +495,7 @@
                         Margin="10,30,0,0"/>
                     <Entry
                         x:Name="idEntry"
-                         IsEnabled="False"
+                        IsEnabled="False"
                         Placeholder="ID"
                         HorizontalOptions="StartAndExpand" 
                         WidthRequest="100" 
@@ -653,10 +653,8 @@
                             HeightRequest="0"
                             Grid.Column="0"
                             Grid.Row="4"
-                            Margin="110,0,0,0"/>
-
-
-                       
+                            Margin="110,0,0,0"
+                            TextChanged="Cl_dn_Entry_TextChanged"/>
 
                         <Label 
                             Text="Rua:" 
