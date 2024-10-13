@@ -179,6 +179,8 @@
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                                
                             </Grid.ColumnDefinitions>
@@ -188,6 +190,7 @@
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
 
                         <Button
@@ -226,10 +229,11 @@
                             WidthRequest="190"
                             BackgroundColor="LightGrey"
                             Grid.Row="3"/>
-                        
-                    </Grid>
 
-                       
+
+                        </Grid>
+
+                        
 
                     </StackLayout>
                     
@@ -441,6 +445,8 @@
 
 
                     </Grid>
+                    
+                    
 
                 </StackLayout>
             </ContentView>
@@ -1549,6 +1555,7 @@
                             </Picker>
                         </Grid>
 
+                        <ScrollView>
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
@@ -1610,6 +1617,10 @@
                                 BackgroundColor="#FF0000" />
 
                             <!--Tela de atualização-->
+
+                           
+
+
                             <Frame 
                                 BackgroundColor="LightGray" 
                                 WidthRequest="50"
@@ -1619,6 +1630,8 @@
                                 Grid.Row="0"
                                 Grid.Column="1"
                                 Margin="30,39,0,0">
+
+                                
                                 <Label 
                                     Text="ID"
                                     FontSize="15" 
@@ -1707,7 +1720,8 @@
                             </Frame>
 
                             
-                                <!-- Adicione o StackLayout para a lista de produtos -->
+
+                            <!-- Adicione o StackLayout para a lista de produtos -->
                                 <StackLayout
                                     x:Name="ProductStackLayout"
                                     Orientation="Vertical"
@@ -1749,7 +1763,7 @@
                                     Orientation="Vertical"
                                     WidthRequest="105"
                                     Grid.Row="1"
-                                    Grid.Column="3"
+                                    Grid.Column="3" 
                                     Grid.ColumnSpan="4"
                                     Grid.RowSpan="6"
                                     HorizontalOptions="Start"
@@ -1767,7 +1781,14 @@
                                     HorizontalOptions="Start"
                                     Margin="325,0,0,0">
                             </StackLayout>
+
+                           
+
                         </Grid>
+                        </ScrollView>
+
+                       
+
 
                     </StackLayout>
 

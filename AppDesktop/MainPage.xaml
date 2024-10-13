@@ -4,7 +4,6 @@
              x:Class="AppDesktop.MainPage"
              BackgroundColor="White">
     <Grid>
-        <!-- Defina uma linha e uma coluna para preencher todo o espaço disponível -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -13,7 +12,6 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <!-- Imagem de fundo -->
         <Image
             Source="agross.jpg"
             Aspect="AspectFill"
@@ -24,7 +22,6 @@
             Grid.Column="0"
             Opacity="0.8" />
 
-        <!-- StackLayout centralizado com os elementos -->
         <StackLayout
             VerticalOptions="Center"
             HorizontalOptions="Center"
@@ -33,14 +30,12 @@
             Grid.Row="0"
             Grid.Column="0">
 
-            <!-- Imagem de login -->
             <Image
                 Source="img_login.jpg"
                 HeightRequest="70"
                 Aspect="AspectFit"
                 SemanticProperties.Description="Imagem de login" />
 
-            <!-- Frame para a caixa branca dos campos de entrada -->
             <Frame
                 BackgroundColor="White"
                 CornerRadius="10"
@@ -48,21 +43,23 @@
                 HasShadow="True"
                 WidthRequest="300">
                 <StackLayout Spacing="10">
-                    <!-- Campo de entrada para o usuário -->
                     <Entry
                         x:Name="Username"
                         Placeholder="Usuário"
                         WidthRequest="250"
-                        HeightRequest="40" />
+                        HeightRequest="40"
+                        Completed="OnUsernameCompleted" />
+                    <!-- Evento Completed -->
 
-                    <!-- Campo de entrada para a senha com ícone de olho -->
                     <Grid>
                         <Entry
                             x:Name="Password"
                             Placeholder="Senha"
                             IsPassword="True"
                             WidthRequest="250"
-                            HeightRequest="40" />
+                            HeightRequest="40"
+                            Completed="OnPasswordCompleted" />
+                        <!-- Evento Completed -->
                         <ImageButton
                             Source="eye_icon.png"
                             WidthRequest="30"
@@ -75,7 +72,6 @@
                 </StackLayout>
             </Frame>
 
-            <!-- Link "Esqueceu a senha?" -->
             <Label
                 Text="Esqueceu a senha?"
                 TextColor="White"
@@ -85,7 +81,6 @@
                 </Label.GestureRecognizers>
             </Label>
 
-            <!-- Botão Entrar -->
             <Button
                 x:Name="Login"
                 Text="Entrar"

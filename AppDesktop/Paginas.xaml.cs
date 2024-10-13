@@ -10,12 +10,12 @@ using System.Text;
 namespace AppDesktop {
     public partial class Paginas : ContentPage {
 
-       
-
         public Paginas() {
             InitializeComponent();
             paymentMethodPicker.SelectedIndexChanged += PaymentMethodPicker_SelectedIndexChanged;
-            this.SizeChanged += OnPageSizeChanged;
+            SizeChanged += OnPageSizeChanged;
+           
+
         }
 
 
@@ -95,8 +95,6 @@ namespace AppDesktop {
             }
         }
 
-
-
         private readonly FramesPaginaVendas framesPaginaVendas = new FramesPaginaVendas();
 
         private void Button_Confirmacao(object sender, EventArgs e) {
@@ -110,7 +108,6 @@ namespace AppDesktop {
                 ProductStackLayout, LinhaQuantidade, LinhaPrecoUn, LinhaDesconto, LinhaValorTotal,
                 produtoDigitado, quantidadeDigitado, precoUnDigitado, descontoDigitado, valorTotalDigitado);
         }
-
 
 
         private void OnPageSizeChanged(object sender, EventArgs e) {
@@ -218,7 +215,7 @@ namespace AppDesktop {
         }
 
 
-        
+
 
         // Evento TextChanged no Entry
         private void Cl_dn_Entry_TextChanged(object sender, TextChangedEventArgs e) {
@@ -398,10 +395,10 @@ namespace AppDesktop {
 
         private void CheckBoxOtherSex_CheckedChanged(object sender, CheckedChangedEventArgs e) {
 
+
+
         }
-
-
     }
-}
 
+}
 

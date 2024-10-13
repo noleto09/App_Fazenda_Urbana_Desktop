@@ -13,6 +13,7 @@
           "Microsoft.Maui.Controls": "8.0.7",
           "Microsoft.Maui.Controls.Compatibility": "8.0.7",
           "MySql.Data": "9.0.0",
+          "MouseScrollLibrary": "1.0.0.0",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
         "runtime": {
@@ -678,6 +679,14 @@
             "fileVersion": "0.8.0.0"
           }
         }
+      },
+      "MouseScrollLibrary/1.0.0.0": {
+        "runtime": {
+          "MouseScrollLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1104,6 +1113,11 @@
       "sha512": "sha512-Z62eNBIu8E8YtbqlMy57tK3dV1+m2b9NhPeaYovB5exmLKvrGCqOhJTzrEUH5VyUWU6vwX3c1XHJGhW5HVs8dA==",
       "path": "zstdsharp.port/0.8.0",
       "hashPath": "zstdsharp.port.0.8.0.nupkg.sha512"
+    },
+    "MouseScrollLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

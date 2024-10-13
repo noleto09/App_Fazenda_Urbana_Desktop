@@ -33,5 +33,15 @@ namespace AppDesktop {
                 await DisplayAlert("Erro de Login", "Usuário não cadastrado, usuário ou senha incorreta", "OK");
             }
         }
+
+        // Evento acionado ao pressionar "Enter" no campo Username
+        private void OnUsernameCompleted(object sender, EventArgs e) {
+            Password.Focus(); // Move o foco para o campo de senha
+        }
+
+        // Evento acionado ao pressionar "Enter" no campo Password
+        private void OnPasswordCompleted(object sender, EventArgs e) {
+            Login_Clicked_1(sender, e); // Chama o método de login
+        }
     }
 }

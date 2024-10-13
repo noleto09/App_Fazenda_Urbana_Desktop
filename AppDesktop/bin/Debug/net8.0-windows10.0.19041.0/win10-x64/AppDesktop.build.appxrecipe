@@ -520,6 +520,9 @@
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\mysql.data\9.0.0\runtimes\win-x64\native\krbcc64.dll">
       <PackagePath>krbcc64.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\APINETMAUI\MouseScrollLibrary\MouseScrollLibrary\obj\Debug\net8.0\MouseScrollLibrary.dll">
+      <PackagePath>MouseScrollLibrary.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.maui.controls.compatibility\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
     </AppxPackagedFile>

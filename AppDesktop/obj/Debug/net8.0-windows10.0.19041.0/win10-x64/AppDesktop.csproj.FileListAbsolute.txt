@@ -207,3 +207,5 @@ C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Deb
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\k5sprt64.dll
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\krb5_64.dll
 C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\krbcc64.dll
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MouseScrollLibrary.dll
+C:\Users\Lenovo\Documents\SOFTWARE FAZENDA DESKTOP\AppDesktop\AppDesktop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MouseScrollLibrary.pdb
